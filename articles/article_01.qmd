@@ -1,0 +1,62 @@
+---
+title: "Minimum Function"
+---
+
+## Introduction to the Problem
+
+Below I have described a solution to the Minimum problem in Chapter 3 of the Eloquent Javascript book.
+
+The problem is described in full [here](https://eloquentjavascript.net/03_functions.html). 
+
+<blockquote>
+Minimum
+
+The previous chapter introduced the standard function Math.min that returns its smallest argument. We can build something like that now. Write a function min that takes two arguments and returns their minimum.
+
+If you have trouble putting braces and parentheses in the right place to get a valid function definition, start by copying one of the examples in this chapter and modifying it.
+
+A function may contain multiple return statements.
+
+</blockquote>
+
+In the remainder of the article I have provided a detailed explanation of the solution-code.
+
+## Explaining the Solution 
+
+To see the solution to the Minimum function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Minimum).
+
+```.js
+function min(a,b) {
+    if (a < b) return a;
+    else return b;
+}
+console.log(Math.min(0, 10));
+console.log(Math.min(0, -10));
+```
+## Explanation:
+
+```.js
+function min(a,b) {
+    if (a < b) return a;
+    else return b;
+}
+```
+This function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”. 
+
+## Test the Code:
+```.js
+console.log(Math.min(0, 10));
+console.log(Math.min(0, -10));
+```
+These lines of code are used to test the function that was made.
+
+The first `console.log` line calls `Math.min` with the arguments `0` and `10`. Since `0` is the minimum value, it should be printed out to the console.
+
+The next `console.log` line calls `Math.min` with arguments `0` and `-10`. Since `-10` is the minimum value, it should be printed out to the console. 
+
+
+## Output of Function:
+```.js
+ 0
+-10
+```

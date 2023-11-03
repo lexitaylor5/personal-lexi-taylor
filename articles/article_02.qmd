@@ -1,0 +1,87 @@
+---
+title: "Recursion Function"
+---
+
+## Introduction to the Problem
+
+Below I have described a solution to the Recursion problem in Chapter 3 of the Eloquent Javascript book.
+
+The problem is described in full [here](https://eloquentjavascript.net/03_functions.html). 
+
+<blockquote>
+Recursion
+
+We’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 to see whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:
+
+Zero is even.
+
+One is odd.
+
+For any other number N, its evenness is the same as N - 2.
+
+Define a recursive function isEven corresponding to this description. The function should accept a single parameter (a positive, whole number) and return a Boolean.
+
+Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
+
+Your function will likely look somewhat similar to the inner find function in the recursive findSolution example in this chapter, with an if/else if/else chain that tests which of the three cases applies. The final else, corresponding to the third case, makes the recursive call. Each of the branches should contain a return statement or in some other way arrange for a specific value to be returned.
+
+When given a negative number, the function will recurse again and again, passing itself an ever more negative number, thus getting further and further away from returning a result. It will eventually run out of stack space and abort.
+
+</blockquote>
+
+In the remainder of the article I have provided a detailed explanation of the solution-code.
+
+## Explaining the Solution 
+
+To see the solution to the Recursion function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Recursion%20).
+
+```.js
+ isEven = function(number) {
+    if (number == 0)
+        return true;
+    else if (number == 1)
+        return false;
+    else if (number < 0)
+        return isEven(-number);
+    else
+        return isEven(number - 2);
+}
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
+```
+## Explanation:
+```.js
+ isEven = function(number) {
+    if (number == 0)
+        return true;
+    else if (number == 1)
+        return false;
+    else if (number < 0)
+        return isEven(-number);
+    else
+        return isEven(number - 2);
+}
+```
+This code creates a function that checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one, the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches one. 
+
+## Test the Code:
+```.js
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
+```
+These lines of code are used to test the function that was made.
+
+Since 50 is an even number, the console should print `true`. 
+
+Since 75 is an odd number, the console should print out `false`. 
+
+Since 1 is not an even number, the console should print out `false`.
+
+## Output of Function:
+```.js
+true
+false
+false
+```
