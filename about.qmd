@@ -2,4 +2,12 @@
 title: "About"
 ---
 
-About this site
+Hello, I am Lexi! I am currently a student at Georgetown College majoring in marketing and minoring in Computer Science. 
+
+## Early Life 
+
+I am from Mt. Washinton, Kentucky. I have a sister that is two years older than me. I also have a cat named Binx.
+
+## Future Life
+
+I plan on graduating this Decemeber. After I graduate Georgeotwn College I plan on pursuing a job in sales. Preferably I would like to do something that consists of medical sales. 
