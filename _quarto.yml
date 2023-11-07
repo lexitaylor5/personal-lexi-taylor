@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Lexi Taylor's Website Warmup"
+  site-path: "/warmup-lexi-taylor/"
   navbar:
     left:
       - href: index.qmd

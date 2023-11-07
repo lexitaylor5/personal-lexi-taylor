@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Welcome to my Warmup Website! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
@@ -14,11 +7,11 @@
     "text": "Hello, I am Lexi! I am currently a student at Georgetown College majoring in marketing and minoring in Computer Science. I am currently a senior, and plan to graduate this December of 2023."
   },
   {
-    "objectID": "about.html#early-life",
-    "href": "about.html#early-life",
+    "objectID": "about.html#early-present-life",
+    "href": "about.html#early-present-life",
     "title": "About Me",
-    "section": "Early Life",
-    "text": "Early Life\n\nI am from a small town in Mt. Washinton, Kentucky which is about 30 minutes away from Louisville. Growing up I have lived in Mt Washington with my mom, dad and my sister. My sister is two years older than me and just recently got married in September. Throughout my younger years all the way up to college I played basketball which constantly kept me busy. I also have a cat named Binx. I got him about two years ago from the humane society."
+    "section": "Early/ Present Life",
+    "text": "Early/ Present Life\n\nI am from a small town in Mt. Washington, Kentucky which is about 30 minutes away from Louisville. Throughout my younger years all the way up to college I played basketball which constantly kept me busy. Growing up I have lived in Mt Washington with my mom, dad and my sister. My sister is two years older than me and just recently got married in September. I also have a cat named Binx. I got him about two years ago from the Lexington Humane Society. In my free time I enjoy spending time with my friends and family, shopping, and going on walks."
   },
   {
     "objectID": "about.html#future-life",
@@ -49,41 +42,6 @@
     "text": "Below I have described a solution to the Minimum problem in Chapter 3 of the Eloquent Javascript book.\nThe problem is described in full here.\n\nMinimum\nThe previous chapter introduced the standard function Math.min that returns its smallest argument. We can build something like that now. Write a function min that takes two arguments and returns their minimum.\nIf you have trouble putting braces and parentheses in the right place to get a valid function definition, start by copying one of the examples in this chapter and modifying it.\nA function may contain multiple return statements.\n\nIn the remainder of the article I have provided a detailed explanation of the solution-code."
   },
   {
-    "objectID": "articles/article_01.html#reading-in-the-data",
-    "href": "articles/article_01.html#reading-in-the-data",
-    "title": "Advent of Code 2022, Day 1: A Solution Using Javascript",
-    "section": "Reading in the Data",
-    "text": "Reading in the Data\nSuppose that the problem data is contained in a file called input.txt located in the same dirctory as the JavaScript file, for example:\n\n\ninput.txt\n\n1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000\n\nWe will be importing data from a source outside the Node envionment, so we’ll be working with file-systems. Accordingly, we import the fs and path modules:\nconst fs = require(\"fs\");\nconst path = require(\"path\");\n\nDetermining the Pathname of the Input File\nWe now use the functionality of the path module to construct a string that gives the pathname of the input.txt file.\nlet targetFile = path.resolve(__dirname, \"input.txt\");\nIn the above code, __dirname evaluates to the full name of the directory containing the file being run, and path.resolve puts it together with the second argument to get the full pathnamename of the input file.\n\n\nReading in the Input File\nNext, we use the fs module tp read in the file, and the we and convert it to a string:\nconst input = fs.readFileSync(targetFile).toString();\n\n\nProcessing the Input File\nWe wish to convert the string into an array of values, where each element of the array is the calorie-value of an item.\nTo this end, we must split the string along the newlines within it. To this end we define a splitting function:\nconst splitLines = str =&gt; str.split(/\\n/);\nNote the use of the Javacript regular expression /\\n/). (In Javascript regular expressions to not start life as strings, as they do in R. Instead they are a special type of object, delimited by the forward-slash: /. For more on regular expressions in JavaScript, see Chapter 8 of the Eloquent JavaScript textbook.)\nWe now apply the function to split the input into an array of strings;\nconst caloriesAsStrings = splitLines(input);\nThe array is full of strings. (Some of them are the empty strinf—wherever there were two consecutive newlines in the oringal input to separate the pack of one elf from the pack of the next elf.)\nWe need to convert them to numbers. To that end, we apply the higher-order array-method map() to the caloriesAsStrings:\nconst calories = caloriesAsStrings.map(str =&gt; parseInt(str));\nIt is important to note that parseInt() converts the empty string to the value NaN: “not a number”."
-  },
-  {
-    "objectID": "articles/article_01.html#looping-to-compute-pack-totals",
-    "href": "articles/article_01.html#looping-to-compute-pack-totals",
-    "title": "Advent of Code 2022, Day 1: A Solution Using Javascript",
-    "section": "Looping to Compute Pack-Totals",
-    "text": "Looping to Compute Pack-Totals\nThe array calories consists of calorie counts, with NaNs separatng items in different packs. We’ll work with this array to find the sums of the calorie-counts in each pack.\nFirst, we make an array to hold the total calories for each pack:\nconst packTotals = [];\nOne by one, we pull items from the beginning of the calories array, making the pack totals:\nwhile (calories.length &gt; 0) {\n  let packTotal = 0;\n  let currentItem = calories.shift();\n  while (!isNaN(currentItem)) {\n    packTotal += currentItem;\n    currentItem = calories.shift();\n  }\n  packTotals.push(packTotal);\n};\npackTotals is now an array of the total calories in each pack."
-  },
-  {
-    "objectID": "articles/article_01.html#reporting-the-maximum-pack-total",
-    "href": "articles/article_01.html#reporting-the-maximum-pack-total",
-    "title": "Advent of Code 2022, Day 1: A Solution Using Javascript",
-    "section": "Reporting the Maximum Pack-Total",
-    "text": "Reporting the Maximum Pack-Total\nFinally, we compute the maximum of the pack totals:\nlet maxPackTotal = Math.max(...packTotals);\n(Math.max() takes as arguments all of the numbers of whihc we wish to find the maximum. Note the use of the three-dot notation notation ... to convert the single array into separate arguments. For a review of the three-dot notation, see the section Rest Parameters in Eloquent JavaScript. )\nFinally, we report the maximum to the console:\nconsole.log(maxPackTotal);\nWe are done!"
-  },
-  {
-    "objectID": "articles/article_01.html#full-code",
-    "href": "articles/article_01.html#full-code",
-    "title": "Advent of Code 2022, Day 1: A Solution Using Javascript",
-    "section": "Full Code",
-    "text": "Full Code\nA complete solution to the problem may be found here, or the reader may view it below:\n\n\nadvent_2022-01.js\n\nconst fs = require(\"fs\");\nconst path = require(\"path\");\n\nlet targetFile = path.resolve(__dirname, \"input.txt\");\n\nconst input = fs.readFileSync(targetFile).toString();\n\nconst splitLines = str =&gt; str.split(/\\n/);\nconst caloriesAsStrings = splitLines(input);\n\nconst calories = caloriesAsStrings.map(str =&gt; parseInt(str));\n\nconst packTotals = [];\n\nwhile (calories.length &gt; 0) {\n  let packTotal = 0;\n  let currentItem = calories.shift();\n  while (!isNaN(currentItem)) {\n    packTotal += currentItem;\n    currentItem = calories.shift();\n  }\n  packTotals.push(packTotal);\n}\n\nlet maxPackTotal = Math.max(...packTotals);\nconsole.log(maxPackTotal);"
-  },
-  {
-    "objectID": "articles/article_02.html",
-    "href": "articles/article_02.html",
-    "title": "Recursion Function",
-    "section": "",
-    "text": "Below I have described a solution to the Recursion problem in Chapter 3 of the Eloquent Javascript book.\nThe problem is described in full here.\n\nRecursion\nWe’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 to see whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:\nZero is even.\nOne is odd.\nFor any other number N, its evenness is the same as N - 2.\nDefine a recursive function isEven corresponding to this description. The function should accept a single parameter (a positive, whole number) and return a Boolean.\nTest it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?\nYour function will likely look somewhat similar to the inner find function in the recursive findSolution example in this chapter, with an if/else if/else chain that tests which of the three cases applies. The final else, corresponding to the third case, makes the recursive call. Each of the branches should contain a return statement or in some other way arrange for a specific value to be returned.\nWhen given a negative number, the function will recurse again and again, passing itself an ever more negative number, thus getting further and further away from returning a result. It will eventually run out of stack space and abort.\n\nIn the remainder of the article I have provided a detailed explanation of the solution-code."
-  },
-  {
     "objectID": "articles/article_01.html#explaining-the-solution",
     "href": "articles/article_01.html#explaining-the-solution",
     "title": "Minimum Function",
@@ -91,25 +49,11 @@
     "text": "Explaining the Solution\nTo see the solution to the Minimum function problem in the GitHub browser click here.\nfunction min(a,b) {\n    if (a &lt; b) return a;\n    else return b;\n}\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));"
   },
   {
-    "objectID": "articles/article_01.html#line-one-explnation",
-    "href": "articles/article_01.html#line-one-explnation",
+    "objectID": "articles/article_01.html#explanation",
+    "href": "articles/article_01.html#explanation",
     "title": "Minimum Function",
-    "section": "Line One Explnation",
-    "text": "Line One Explnation\nfunction min(a,b) \nThis line creates a function that takes two parameters “a” and “b”."
-  },
-  {
-    "objectID": "articles/article_01.html#line-two-explanation",
-    "href": "articles/article_01.html#line-two-explanation",
-    "title": "Minimum Function",
-    "section": "Line Two Explanation:",
-    "text": "Line Two Explanation:\nif (a &lt; b) return a;\nThese two values then get compared. If “a” is less than “b” then “a” will be returned."
-  },
-  {
-    "objectID": "articles/article_01.html#line-three-explanation",
-    "href": "articles/article_01.html#line-three-explanation",
-    "title": "Minimum Function",
-    "section": "Line Three Explanation:",
-    "text": "Line Three Explanation:\nelse return b;\nIf “b” is less than “a” the function will return “b”."
+    "section": "Explanation:",
+    "text": "Explanation:\nfunction min(a,b) {\n    if (a &lt; b) return a;\n    else return b;\n}\nThis function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”."
   },
   {
     "objectID": "articles/article_01.html#test-the-code",
@@ -119,11 +63,18 @@
     "text": "Test the Code:\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));\nThese lines of code are used to test the function that was made.\nThe first console.log line calls Math.min with the arguments 0 and 10. Since 0 is the minimum value, it should be printed out to the console.\nThe next console.log line calls Math.min with arguments 0 and -10. Since -10 is the minimum value, it should be printed out to the console."
   },
   {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
-    "section": "About Me",
-    "text": "About Me\nHello, I am Lexi! I am currently a student at Georgetown College majoring in marketing and minoring in Computer Science. I am currently a senior, and plan to graduate this December of 2023."
+    "objectID": "articles/article_01.html#output-of-function",
+    "href": "articles/article_01.html#output-of-function",
+    "title": "Minimum Function",
+    "section": "Output of Function:",
+    "text": "Output of Function:\n 0\n-10"
+  },
+  {
+    "objectID": "articles/article_02.html",
+    "href": "articles/article_02.html",
+    "title": "Recursion Function",
+    "section": "",
+    "text": "Below I have described a solution to the Recursion problem in Chapter 3 of the Eloquent Javascript book.\nThe problem is described in full here.\n\nRecursion\nWe’ve seen that % (the remainder operator) can be used to test whether a number is even or odd by using % 2 to see whether it’s divisible by two. Here’s another way to define whether a positive whole number is even or odd:\nZero is even.\nOne is odd.\nFor any other number N, its evenness is the same as N - 2.\nDefine a recursive function isEven corresponding to this description. The function should accept a single parameter (a positive, whole number) and return a Boolean.\nTest it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?\nYour function will likely look somewhat similar to the inner find function in the recursive findSolution example in this chapter, with an if/else if/else chain that tests which of the three cases applies. The final else, corresponding to the third case, makes the recursive call. Each of the branches should contain a return statement or in some other way arrange for a specific value to be returned.\nWhen given a negative number, the function will recurse again and again, passing itself an ever more negative number, thus getting further and further away from returning a result. It will eventually run out of stack space and abort.\n\nIn the remainder of the article I have provided a detailed explanation of the solution-code."
   },
   {
     "objectID": "articles/article_02.html#introduction-to-the-problem",
@@ -140,74 +91,11 @@
     "text": "Explaining the Solution\nTo see the solution to the Recursion function problem in the GitHub browser click here.\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));"
   },
   {
-    "objectID": "articles/article_02.html#line-one",
-    "href": "articles/article_02.html#line-one",
+    "objectID": "articles/article_02.html#explanation",
+    "href": "articles/article_02.html#explanation",
     "title": "Recursion Function",
-    "section": "Line One:",
-    "text": "Line One:\n isEven = function(number) \nThis line creates a function that checks for evenness."
-  },
-  {
-    "objectID": "articles/article_02.html#line-2",
-    "href": "articles/article_02.html#line-2",
-    "title": "Recursion Function",
-    "section": "Line 2",
-    "text": "Line 2\nif (number == 0)\nIf the number is equal to zero, then the function will immediately return true which indicates that zero is an even number.\nThis function checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches our one."
-  },
-  {
-    "objectID": "articles/article_02.html#line-two",
-    "href": "articles/article_02.html#line-two",
-    "title": "Recursion Function",
-    "section": "Line Two:",
-    "text": "Line Two:\nif (number == 0)\nIf the number is equal to zero…"
-  },
-  {
-    "objectID": "articles/article_02.html#line-three",
-    "href": "articles/article_02.html#line-three",
-    "title": "Recursion Function",
-    "section": "Line Three:",
-    "text": "Line Three:\nreturn true;\nthen the function will immediately return true which indicates that zero is an even number."
-  },
-  {
-    "objectID": "articles/article_02.html#line-four",
-    "href": "articles/article_02.html#line-four",
-    "title": "Recursion Function",
-    "section": "Line Four:",
-    "text": "Line Four:\nelse if (number == 1)\nIf the number is equal to one…"
-  },
-  {
-    "objectID": "articles/article_02.html#line-five",
-    "href": "articles/article_02.html#line-five",
-    "title": "Recursion Function",
-    "section": "Line Five:",
-    "text": "Line Five:\nreturn false;\nthe function returns false, which indicated one is an odd number."
-  },
-  {
-    "objectID": "articles/article_02.html#line-six",
-    "href": "articles/article_02.html#line-six",
-    "title": "Recursion Function",
-    "section": "Line Six:",
-    "text": "Line Six:\nelse if (number &lt; 0)\nIf none of these lines are true, it checks to see if number is less than zero."
-  },
-  {
-    "objectID": "articles/article_02.html#line-seven",
-    "href": "articles/article_02.html#line-seven",
-    "title": "Recursion Function",
-    "section": "Line Seven:",
-    "text": "Line Seven:\nreturn isEven(-number);\nIf the number is negative, it converts it to positive."
-  },
-  {
-    "objectID": "articles/article_02.html#line-eight",
-    "href": "articles/article_02.html#line-eight",
-    "title": "Recursion Function",
-    "section": "Line Eight",
-    "text": "Line Eight\nelse\n    return isEven(number - 2);\nLastly, the function subtracts 2 from the number and continues the process until it reaches our one."
-  },
-  {
-    "objectID": "articles/article_02.html#lines-seven-and-eight",
-    "href": "articles/article_02.html#lines-seven-and-eight",
-    "title": "Recursion Function",
-    "section": "Lines Seven and Eight",
-    "text": "Lines Seven and Eight\nelse\n    return isEven(number - 2);\nLastly, the function subtracts 2 from the number and continues the process until it reaches our one."
+    "section": "Explanation:",
+    "text": "Explanation:\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nThis code creates a function that checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one, the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches one."
   },
   {
     "objectID": "articles/article_02.html#test-the-code",
@@ -217,20 +105,6 @@
     "text": "Test the Code:\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));\nThese lines of code are used to test the function that was made.\nSince 50 is an even number, the console should print true.\nSince 75 is an odd number, the console should print out false.\nSince 1 is not an even number, the console should print out false."
   },
   {
-    "objectID": "articles/article_01.html#explanation",
-    "href": "articles/article_01.html#explanation",
-    "title": "Minimum Function",
-    "section": "Explanation:",
-    "text": "Explanation:\nfunction min(a,b) {\n    if (a &lt; b) return a;\n    else return b;\n}\nThis function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”."
-  },
-  {
-    "objectID": "articles/article_02.html#explanation",
-    "href": "articles/article_02.html#explanation",
-    "title": "Recursion Function",
-    "section": "Explanation:",
-    "text": "Explanation:\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nThis code creates a function that checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one, the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches one."
-  },
-  {
     "objectID": "articles/article_02.html#output-of-function",
     "href": "articles/article_02.html#output-of-function",
     "title": "Recursion Function",
@@ -238,24 +112,10 @@
     "text": "Output of Function:\ntrue\nfalse\nfalse"
   },
   {
-    "objectID": "articles/article_01.html#output-of-function",
-    "href": "articles/article_01.html#output-of-function",
-    "title": "Minimum Function",
-    "section": "Output of Function:",
-    "text": "Output of Function:\n 0\n-10"
-  },
-  {
-    "objectID": "about.html#life",
-    "href": "about.html#life",
-    "title": "About Me",
-    "section": "Life",
-    "text": "Life\n\nI am from a small town in Mt. Washinton, Kentucky which is about 30 minutes away from Louisville. Growing up I have lived in Mt Washington with my mom, dad and my sister. My sister is two years older than me and just recently got married in September. Throughout my younger years all the way up to college I played basketball which constantly kept me busy. I also have a cat named Binx. I got him about two years ago from the humane society."
-  },
-  {
-    "objectID": "about.html#early-present-life",
-    "href": "about.html#early-present-life",
-    "title": "About Me",
-    "section": "Early/ Present Life",
-    "text": "Early/ Present Life\n\nI am from a small town in Mt. Washington, Kentucky which is about 30 minutes away from Louisville. Throughout my younger years all the way up to college I played basketball which constantly kept me busy. Growing up I have lived in Mt Washington with my mom, dad and my sister. My sister is two years older than me and just recently got married in September. I also have a cat named Binx. I got him about two years ago from the Lexington Humane Society. In my free time I enjoy spending time with my friends and family, shopping, and going on walks."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome to my Warmup Website! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
   }
 ]
