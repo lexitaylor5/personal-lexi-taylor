@@ -60,14 +60,7 @@
     "href": "articles/article_01.html#test-the-code",
     "title": "Minimum Function",
     "section": "Test the Code:",
-    "text": "Test the Code:\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));\nThese lines of code are used to test the function that was made.\nThe first console.log line calls Math.min with the arguments 0 and 10. Since 0 is the minimum value, it should be printed out to the console.\nThe next console.log line calls Math.min with arguments 0 and -10. Since -10 is the minimum value, it should be printed out to the console."
-  },
-  {
-    "objectID": "articles/article_01.html#output-of-function",
-    "href": "articles/article_01.html#output-of-function",
-    "title": "Minimum Function",
-    "section": "Output of Function:",
-    "text": "Output of Function:\n 0\n-10"
+    "text": "Test the Code:\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));\n 0\n-10\nThese lines of code are used to test the function that was made.\nThe first console.log line calls Math.min with the arguments 0 and 10. Since 0 is the minimum value, it should be printed out to the console.\nThe next console.log line calls Math.min with arguments 0 and -10. Since -10 is the minimum value, it should be printed out to the console."
   },
   {
     "objectID": "articles/article_02.html",
@@ -88,7 +81,7 @@
     "href": "articles/article_02.html#explaining-the-solution",
     "title": "Recursion Function",
     "section": "Explaining the Solution",
-    "text": "Explaining the Solution\nTo see the solution to the Recursion function problem in the GitHub browser click here.\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));"
+    "text": "Explaining the Solution\nTo see the solution to the Recursion Function problem in the GitHub browser click here.\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));"
   },
   {
     "objectID": "articles/article_02.html#explanation",
@@ -102,20 +95,13 @@
     "href": "articles/article_02.html#test-the-code",
     "title": "Recursion Function",
     "section": "Test the Code:",
-    "text": "Test the Code:\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));\nThese lines of code are used to test the function that was made.\nSince 50 is an even number, the console should print true.\nSince 75 is an odd number, the console should print out false.\nSince 1 is not an even number, the console should print out false."
-  },
-  {
-    "objectID": "articles/article_02.html#output-of-function",
-    "href": "articles/article_02.html#output-of-function",
-    "title": "Recursion Function",
-    "section": "Output of Function:",
-    "text": "Output of Function:\ntrue\nfalse\nfalse"
+    "text": "Test the Code:\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));\ntrue\nfalse\nfalse\nThese lines of code are used to test the function that was made.\nSince 50 is an even number, the console should print true.\nSince 75 is an odd number, the console should print out false.\nSince 1 is not an even number, the console should print out false."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome to my Warmup Website! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
+    "text": "Welcome to my Website Warmup! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
   }
 ]
