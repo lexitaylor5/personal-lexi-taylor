@@ -48,6 +48,12 @@ This function takes two parameters “a” and “b”. These two values then ge
 console.log(Math.min(0, 10));
 console.log(Math.min(0, -10));
 ```
+
+```.js
+ 0
+-10
+```
+
 These lines of code are used to test the function that was made.
 
 The first `console.log` line calls `Math.min` with the arguments `0` and `10`. Since `0` is the minimum value, it should be printed out to the console.
@@ -55,8 +61,3 @@ The first `console.log` line calls `Math.min` with the arguments `0` and `10`. S
 The next `console.log` line calls `Math.min` with arguments `0` and `-10`. Since `-10` is the minimum value, it should be printed out to the console. 
 
 
-## Output of Function:
-```.js
- 0
--10
-```

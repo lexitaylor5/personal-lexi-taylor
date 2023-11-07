@@ -33,7 +33,7 @@ In the remainder of the article I have provided a detailed explanation of the so
 
 ## Explaining the Solution 
 
-To see the solution to the Recursion function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Recursion%20).
+To see the solution to the Recursion Function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Recursion%20).
 
 ```.js
  isEven = function(number) {
@@ -71,6 +71,13 @@ console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1));
 ```
+```.js
+true
+false
+false
+```
+
+
 These lines of code are used to test the function that was made.
 
 Since 50 is an even number, the console should print `true`. 
@@ -79,9 +86,3 @@ Since 75 is an odd number, the console should print out `false`.
 
 Since 1 is not an even number, the console should print out `false`.
 
-## Output of Function:
-```.js
-true
-false
-false
-```
