@@ -6,8 +6,8 @@ about:
     - text: GitHub
       icon: github
       url: "https://github.com/lexitaylor5"
-    - text: Email
-      url: "mailto:lexitaylor@twc.com"
+    - text: LinkedIn
+      url: "https://linkedin.com/in/alexis-taylor-b41a90293"
 comments: false
 ---
 
