@@ -16,23 +16,23 @@ website:
       - href: blog/index.qmd
         text: Blog
 
+
   sidebar:
-    - id: articles
-      title: "Articles"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
-        - text: "Article One"
-          href:  articles/article_01.qmd
-        - text: "Article Two"
-          href:  articles/article_02.qmd
-        - text: "Article Three"
-          href:  articles/article_03.qmd
-        - text: "Blog One"
-          href:  blog/blog_01.qmd
-        - text: "Blog Two"
-          href:  blog/blog_02.qmd
+    style: "docked"
+    search: true
+    contents:
+      - section: "Articles"
+        contents:
+          - index.qmd
+          - articles/article_01.qmd
+          - articles/article_02.qmd
+          - articles/article_03.qmd
+      - section: "Blog"
+        contents:
+          - index.qmd
+          - blog/blog_01.qmd
+          - blog/blog_02.qmd
+
 
 format:
   html:
