@@ -1,3 +1,5 @@
 ---
-Title: Enhancement
+title: "Enhancement"
 ---
+
+## Introduction to the Enhancement
