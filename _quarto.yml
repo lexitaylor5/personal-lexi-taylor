@@ -12,7 +12,10 @@ website:
       - href: about.qmd
         text: About
       - href: articles/index.qmd
-        text: Articles 
+        text: Articles
+      - href: blog/index.qmd
+        text: Blog
+
 
   sidebar:
     - id: articles
