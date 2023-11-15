@@ -16,7 +16,6 @@ website:
       - href: blog/index.qmd
         text: Blog
 
-
   sidebar:
     - id: articles
       title: "Articles"
@@ -28,6 +27,12 @@ website:
           href:  articles/article_01.qmd
         - text: "Article Two"
           href:  articles/article_02.qmd
+        - text: "Article Three"
+          href:  articles/article_03.qmd
+        - text: "Blog One"
+          href:  blog/blog_01.qmd
+        - text: "Blog Two"
+          href:  blog/blog_02.qmd
 
 format:
   html:

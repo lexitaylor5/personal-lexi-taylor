@@ -1,5 +1,14 @@
 ---
 title: "Welcome!"
+about:
+  template: trestles
+  links:
+    - text: GitHub
+      icon: github
+      url: "https://github.com/lexitaylor5"
+    - text: Email
+      url: "mailto:lexitaylor@twc.com"
+comments: false
 ---
 
 Welcome to my  Website Warmup! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day. 
