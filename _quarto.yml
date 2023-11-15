@@ -36,7 +36,6 @@ website:
           - blog/blog_04.qmd
           - blog/blog_05.qmd
 
-
 format:
   html:
     theme: flatly
