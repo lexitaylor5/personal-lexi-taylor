@@ -1,1 +1,3 @@
-Minor Enhancement 
+---
+Title: Enhancement
+---

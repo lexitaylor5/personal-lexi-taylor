@@ -32,6 +32,9 @@ website:
           - index.qmd
           - blog/blog_01.qmd
           - blog/blog_02.qmd
+          - blog/blog_03.qmd
+          - blog/blog_04.qmd
+          - blog/blog_05.qmd
 
 
 format:
