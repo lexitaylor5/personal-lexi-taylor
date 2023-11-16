@@ -13,6 +13,8 @@ website:
         text: About
       - href: articles/index.qmd
         text: Articles
+      - href: posts/index.qmd
+        text: Blog
   
   sidebar:
     style: "docked"
@@ -24,6 +26,7 @@ website:
           - articles/article_01.qmd
           - articles/article_02.qmd
           - articles/article_03.qmd
+      - section: "Posts"
 
 format:
   html:
