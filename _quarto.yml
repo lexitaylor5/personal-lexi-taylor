@@ -14,9 +14,8 @@ website:
       - href: articles/index.qmd
         text: Articles
       - href: blog/index.qmd
-        text: Blog
-
-
+        text: Blogs
+  
   sidebar:
     style: "docked"
     search: true

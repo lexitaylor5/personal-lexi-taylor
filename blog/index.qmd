@@ -1,17 +1,4 @@
 ---
-title: "Posts"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  feed:
-    categories: ["R"]
-page-layout: full
-title-block-banner: false
+title: "Blogs"
 ---
-::: {.column-page}
-
-:::
+The blogs on this site..
