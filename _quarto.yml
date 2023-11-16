@@ -13,8 +13,6 @@ website:
         text: About
       - href: articles/index.qmd
         text: Articles
-      - href: blog/index.qmd
-        text: Blogs
   
   sidebar:
     style: "docked"
@@ -26,15 +24,7 @@ website:
           - articles/article_01.qmd
           - articles/article_02.qmd
           - articles/article_03.qmd
-      - section: "Blog"
-        contents:
-          - blog/index.qmd
-          - blog/blog_01.qmd
-          - blog/blog_02.qmd
-          - blog/blog_03.qmd
-          - blog/blog_04.qmd
-          - blog/blog_05.qmd
-
+          
 format:
   html:
     theme: flatly
