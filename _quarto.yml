@@ -26,6 +26,9 @@ website:
           - articles/article_01.qmd
           - articles/article_02.qmd
           - articles/article_03.qmd
+      - section: "Posts"
+        contents:
+          - blog/index.qmd
 
 format:
   html:
