@@ -1,5 +1,5 @@
 ---
-title: "Homer's Musings"
+title: "Lexi's Posts"
 listing:
   contents: .
   sort: "date desc"
