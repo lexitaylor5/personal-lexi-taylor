@@ -2,8 +2,8 @@
 title: "Emdedding Observable Cells in a Web Page"
 description: "Observable's Embeds features makes this easy!"
 author:
-  - name: Homer White
-date: "2023-11-11"
+  - name: Lexi Taylor
+date: "2023-11-17"
 categories: [observable, substantive]
 image: banner.jpg
 ---

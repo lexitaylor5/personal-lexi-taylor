@@ -1,10 +1,10 @@
 ---
-title: "Let Your Toddler Set Off Freaky Fireworks"
-description: "Fireworks, oddity, very small children and national holidays."
+title: "Toddlers Will Eat Your Legos, But Feed Them Checkers, Too!"
+description: "My thoughts on good nutrition for very small children."
 author:
-  - name: Homer White
-date: "2021-07-04"
-categories: [rants, toys]
+  - name: Lexi Taylor
+date: "2022-11-17"
+categories: [rants, toys, fine dining]
 image: banner.jpg
 ---
 

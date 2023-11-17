@@ -1,10 +1,10 @@
 ---
-title: "Pink Parabolas Make For the Merriest Mathematics"
-description: "Find the area of segments of pink parabolas."
+title: "Green Turtles Make Peevish Pets"
+description: "Profound wisdom on turtles and the color green."
 author:
-  - name: Homer White
-date: "2022-09-05"
-categories: [math, colors]
+  - name: Lexi Taylor
+date: "2023-11-17"
+categories: [rants, animals, colors]
 image: banner.jpg
 ---
 

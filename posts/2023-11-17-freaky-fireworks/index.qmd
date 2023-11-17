@@ -1,10 +1,10 @@
 ---
-title: "Yellow Throttles Make Terrible Toys for Toddlers"
-description: "My thoughts on yellow throttles and very small children."
+title: "Let Your Toddler Set Off Freaky Fireworks"
+description: "Fireworks, oddity, very small children and national holidays."
 author:
-  - name: Homer White
-date: "2023-11-02"
-categories: [rants, toys, colors]
+  - name: Lexi Taylor
+date: "2023-11-17"
+categories: [rants, toys]
 image: banner.jpg
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: "Toddlers Will Eat Your Legos, But Feed Them Checkers, Too!"
-description: "My thoughts on good nutrition for very small children."
+title: "Yellow Throttles Make Terrible Toys for Toddlers"
+description: "My thoughts on yellow throttles and very small children."
 author:
-  - name: Homer White
-date: "2022-01-01"
-categories: [rants, toys, fine dining]
+  - name: Lexi Taylor
+date: "2023-11-17"
+categories: [rants, toys, colors]
 image: banner.jpg
 ---
 
