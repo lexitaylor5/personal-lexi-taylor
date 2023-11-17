@@ -1,10 +1,10 @@
 ---
-title: "Let Your Toddler Set Off Freaky Fireworks"
-description: "Fireworks, oddity, very small children and national holidays."
+title: "Major Enhancement"
+description: "The major enhancement I added to better my website."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [rants, toys]
+categories: [major, enhancement]
 image: banner.jpg
 ---
 
