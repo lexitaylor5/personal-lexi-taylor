@@ -1,10 +1,10 @@
 ---
-title: "Green Turtles Make Peevish Pets"
-description: "Profound wisdom on turtles and the color green."
+title: "Essay Modification"
+description: "Modification on an essay previously written."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [rants, animals, colors]
+categories: [essay, writing, modifications]
 image: banner.jpg
 ---
 
