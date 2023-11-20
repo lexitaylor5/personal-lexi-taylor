@@ -1,10 +1,10 @@
 ---
 title: "Navigating the Transition from College to Work"
-description: "The Job Application Process"
+description: "The job application process."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [job, application]
+categories: [work, application]
 image: banner.jpg
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: "Toddlers Will Eat Your Legos, But Feed Them Checkers, Too!"
-description: "My thoughts on good nutrition for very small children."
+title: "The Benefits of Having Animals in Your Life"
+description: "Animals provide companionship and can diminish loneliness in humans lives."
 author:
   - name: Lexi Taylor
 date: "2022-11-17"
-categories: [rants, toys, fine dining]
+categories: [animals, life, happiness]
 image: banner.jpg
 ---
 

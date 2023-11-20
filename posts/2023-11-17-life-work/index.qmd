@@ -1,10 +1,10 @@
 ---
-title: "Yellow Throttles Make Terrible Toys for Toddlers"
-description: "My thoughts on yellow throttles and very small children."
-author:
+title: "Finding Balance Between Life and Work"
+description: "How to live a happy life."
+author:qua
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [rants, toys, colors]
+categories: [life, work, happiness]
 image: banner.jpg
 ---
 
