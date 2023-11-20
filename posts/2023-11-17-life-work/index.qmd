@@ -1,7 +1,7 @@
 ---
 title: "Finding Balance Between Life and Work"
 description: "How to live a happy life."
-author:qua
+author:
   - name: Lexi Taylor
 date: "2023-11-17"
 categories: [life, work, happiness]
@@ -33,5 +33,4 @@ Donec at est non lectus imperdiet viverra. Vestibulum enim nisi, porttitor sit a
 Nunc at viverra lorem, sit amet pulvinar ligula. Sed iaculis odio at commodo consectetur. Proin posuere diam in dapibus pellentesque. Cras vitae egestas ligula. Phasellus tempus porta diam id molestie. Quisque a luctus velit. Suspendisse pellentesque quam a leo auctor, vel tincidunt massa dapibus. Vivamus porttitor, ipsum a congue imperdiet, neque urna finibus eros, in tristique lacus massa sit amet odio. Vestibulum et laoreet purus, pulvinar vulputate mi. Pellentesque ultrices efficitur mauris nec ultricies. Quisque efficitur magna orci, et maximus justo malesuada at. Nulla hendrerit dui et ligula sagittis efficitur. Ut erat dolor, rutrum ac ex eget, malesuada molestie turpis.
 
 Aenean eget vehicula mi, in rutrum elit. Mauris pulvinar est non sagittis tempor. Sed quis finibus nisi. Pellentesque commodo, nibh at sagittis vulputate, tortor massa iaculis mi, quis sodales risus lorem vel enim. Nunc faucibus ante ut dolor eleifend, tempor efficitur lacus aliquet. Praesent nec sapien et lacus fermentum ultricies. Aenean ut pharetra lectus. Sed et lacus a nisl gravida cursus. 
-
 

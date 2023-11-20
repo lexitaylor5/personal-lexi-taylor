@@ -17,8 +17,7 @@ As you can see in the image below, under the "Welcome!" there are two icons that
 
 ## How I Did It
 <blockquote>
-When making my enhancement I reffered back to the Quarto website [here](https://quarto.org/docs/websites/website-navigation.html). This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page. In order to do this under my `index.qmd` on VS Code I provided the code to get these icons. Below is the code I used. <img src="/images/code.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
-
+When making my enhancement I reffered back to the Quarto website [here](https://quarto.org/docs/websites/website-navigation.html). This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page. In order to do this under my `index.qmd` on VS Code I provided the code to get these icons. Below is the code I used. 
 
 ```{.yml filename="_quarto.yml"}
 title: "Welcone!"
@@ -32,6 +31,7 @@ about:
       url: "https://linkedin.com/in/alexis-taylor-b41a90293"
 ---
 ```
+
 Since these icons are on my home page I decided to title them "Welcome!". The templates on this code can be whatever theme you want. The `link` part in this code is what the text is labeled as. The `icon` is what I want the imagae of the icon to be. The `url` is the actual link to both the pages. 
 
 </blockquote>
