@@ -8,9 +8,9 @@
 
 <meta name="author" content="Lexi Taylor">
 <meta name="dcterms.date" content="2023-11-17">
-<meta name="description" content="Observable’s Embeds features makes this easy!">
+<meta name="description" content="The Job Application Process">
 
-<title>Lexi Taylor’s Website - Emdedding Observable Cells in a Web Page</title>
+<title>Lexi Taylor’s Website - Navigating the Transition from College to Work</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/index.html">Posts</a></li><li class="breadcrumb-item"><a href="../../posts/2023-11-11-observable-embeds/index.html">Emdedding Observable Cells in a Web Page</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/index.html">Posts</a></li><li class="breadcrumb-item"><a href="../../posts/2023-11-11-college-work/index.html">Navigating the Transition from College to Work</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -163,12 +163,6 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/2023-11-11-observable-embeds/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Emdedding Observable Cells in a Web Page</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../posts/2023-11-17-footnotes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Footnotes in Quarto</span></a>
   </div>
@@ -203,6 +197,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Major Enhancement</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/2023-11-11-college-work/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Navigating the Transition from College to Work</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -216,7 +216,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#how-i-did-it" id="toc-how-i-did-it" class="nav-link" data-scroll-target="#how-i-did-it">How I Did It</a></li>
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
+  <li><a href="#incredible" id="toc-incredible" class="nav-link" data-scroll-target="#incredible">Incredible</a></li>
+  <li><a href="#a-sad-day-indeed" id="toc-a-sad-day-indeed" class="nav-link" data-scroll-target="#a-sad-day-indeed">A Sad Day Indeed</a></li>
   </ul>
 </nav>
     </div>
@@ -225,16 +227,16 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Emdedding Observable Cells in a Web Page</h1>
+<h1 class="title">Navigating the Transition from College to Work</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">observable</div>
-    <div class="quarto-category">substantive</div>
+    <div class="quarto-category">job</div>
+    <div class="quarto-category">application</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Observable’s Embeds features makes this easy!
+    The Job Application Process
   </div>
 </div>
 
@@ -263,19 +265,25 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Below is an interactive plot embedded from <a href="https://observablehq.com/@homerhanumat/stock-price-graphs">an Observable notebook</a>:</p>
-<iframe width="100%" height="604" frameborder="0" src="https://observablehq.com/embed/3a58ee9173151885@29?cells=viewof+stockName%2Cviewof+n%2Cviewof+r%2CmyPlot"></iframe>
-<p>Developing in Observable notebooks is usually easier than in Quarto, so embeds are good to keep in mind! (But it seems they sometimes take a while to load.)</p>
 </section>
-<section id="how-i-did-it" class="level2">
-<h2 class="anchored" data-anchor-id="how-i-did-it">How I Did It</h2>
-<p>I simply went to the notebook, clicked on the settings for any named cell, and chose which named cells I wanted to embed. I then copied the embed code into this page, as follows:</p>
-<pre><code>```{=html}
-&lt;iframe width="100%" height="604" frameborder="0"
-  src="https://observablehq.com/embed/3a58ee9173151885@29?cells=viewof+stockName%2Cviewof+n%2Cviewof+r%2CmyPlot"&gt;
-&lt;/iframe&gt;
-```</code></pre>
-<p>For more details consult the <a href="https://observablehq.com/documentation/embeds/">documentation</a>.</p>
+<section id="introduction-1" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-1">Introduction</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar sem quis maximus condimentum. Aliquam volutpat velit arcu, ut blandit erat iaculis quis. Vestibulum metus leo, condimentum vel fringilla vel, malesuada in mauris. Suspendisse condimentum lorem arcu, congue auctor nisi ullamcorper ut. Nam mollis venenatis odio, a tincidunt metus malesuada quis. Integer euismod ut purus eu euismod. Donec sit amet finibus purus. Proin non nisl in lorem pretium rutrum. Vivamus fringilla nibh in mauris rhoncus varius. Sed ut mi quam. Sed non enim et odio laoreet feugiat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ac dui nec eros pharetra volutpat.</p>
+<p>Maecenas vitae est vitae tortor egestas sodales. Nullam nec purus vel elit porta consectetur. Fusce nec elementum eros. Duis sollicitudin est quis dui rhoncus, a luctus tortor elementum. Nullam purus eros, semper vitae pellentesque sit amet, rutrum vitae risus. Vestibulum at lectus vitae purus dignissim eleifend. Nam aliquet posuere nunc vel dapibus. Nam eleifend est sapien, eget commodo ante scelerisque ut. Cras vel massa vulputate, feugiat sapien id, porttitor neque. Suspendisse a libero vitae quam molestie vehicula. Nunc dapibus justo pharetra est gravida porttitor. Duis rutrum congue egestas. Maecenas imperdiet risus ac sapien imperdiet mattis a vitae purus.</p>
+</section>
+<section id="incredible" class="level2">
+<h2 class="anchored" data-anchor-id="incredible">Incredible</h2>
+<p>Curabitur nibh mi, accumsan quis sodales quis, vestibulum id nisi. Nunc ipsum libero, maximus egestas tellus at, convallis vestibulum ipsum. Nullam at velit enim. Nullam tincidunt magna tincidunt libero vestibulum aliquam. Aenean feugiat lacinia interdum. Curabitur pulvinar ornare aliquet. Donec in blandit est, in accumsan nulla. Nunc finibus placerat velit, sagittis venenatis lacus porta in. Fusce ornare quis erat ut rhoncus.</p>
+<p>Vestibulum nec fringilla ligula. Donec feugiat laoreet lacus, vitae egestas nisl tempus ultricies. Nunc eget turpis velit. Mauris eget tempor elit, nec aliquet velit. Ut hendrerit, orci id sollicitudin auctor, nisi metus pulvinar tellus, quis vehicula magna leo vel quam. Fusce varius massa vel tortor elementum consequat. Ut pulvinar elementum dolor. Mauris pretium sem nec lorem molestie porta. In condimentum gravida nisi, at pretium libero viverra ut. Mauris mollis eros eu gravida finibus. Ut pellentesque turpis felis, sed egestas lacus ullamcorper vel. Sed aliquam eros nec ligula bibendum pharetra.</p>
+<p>Morbi hendrerit augue lorem, at facilisis massa elementum interdum. Vestibulum fermentum maximus mollis. Nulla interdum erat ac nisi sodales sagittis. Sed tempor volutpat neque vel suscipit. Sed nec dapibus dui. Donec eu elementum ipsum. Integer vel cursus justo. Morbi ut tortor ac nibh vestibulum efficitur. Phasellus nec dapibus justo, non dapibus urna. Donec faucibus, magna in tincidunt rutrum, turpis risus posuere arcu, at fermentum magna tortor non metus.</p>
+</section>
+<section id="a-sad-day-indeed" class="level2">
+<h2 class="anchored" data-anchor-id="a-sad-day-indeed">A Sad Day Indeed</h2>
+<p>Donec lectus lacus, eleifend vitae mollis eu, laoreet a mi. Maecenas sit amet auctor tellus, vitae accumsan turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eleifend pharetra commodo. Fusce tempor velit dolor, ac rutrum enim consectetur sed. Sed eget metus eget odio euismod convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam interdum, mauris et imperdiet pellentesque, turpis quam blandit elit, sed ornare nulla lectus a odio. Maecenas eget justo ipsum. Phasellus libero dui, congue eu venenatis et, ullamcorper in odio. Curabitur iaculis lectus est, ac placerat est aliquam blandit. Cras sed elit ac ipsum convallis cursus ut nec tellus. Vestibulum in ipsum ante. Aenean condimentum quam in suscipit pulvinar. Suspendisse auctor id erat non placerat. Nam egestas purus ultrices dolor molestie scelerisque.</p>
+<p>Aenean aliquet augue a dui porta, ut condimentum diam blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas faucibus finibus odio ut posuere. Aenean est lorem, lacinia id turpis a, congue bibendum erat. Sed ac nibh lacinia, rutrum dui sed, efficitur tortor. Donec imperdiet, arcu commodo ultricies sagittis, sapien metus auctor sapien, quis venenatis mauris felis non mi. Integer sodales nulla in mi aliquet pretium. Integer ut varius mi. Ut lacinia quis risus vitae suscipit. Maecenas cursus dolor id dolor pretium, sed vestibulum erat accumsan. Mauris purus erat, ultricies nec auctor vel, semper id nulla.</p>
+<p>Donec at est non lectus imperdiet viverra. Vestibulum enim nisi, porttitor sit amet massa ac, lacinia sodales mauris. Aliquam vestibulum sapien ac arcu pellentesque luctus. Sed aliquet efficitur nisl, id ornare ipsum tempus non. In maximus odio vitae dui semper facilisis. Aliquam erat volutpat. Etiam vel justo pulvinar, lacinia magna eget, pharetra dolor. Nunc porta erat in hendrerit suscipit. Fusce felis tellus, rutrum ac dolor nec, iaculis egestas ante. Praesent nisl libero, ultrices ac est ut, consectetur congue ex. Aenean venenatis enim vitae augue tempor vestibulum. Fusce in nulla dolor. Suspendisse fringilla magna et quam consectetur, sed pellentesque tortor bibendum.</p>
+<p>Nunc at viverra lorem, sit amet pulvinar ligula. Sed iaculis odio at commodo consectetur. Proin posuere diam in dapibus pellentesque. Cras vitae egestas ligula. Phasellus tempus porta diam id molestie. Quisque a luctus velit. Suspendisse pellentesque quam a leo auctor, vel tincidunt massa dapibus. Vivamus porttitor, ipsum a congue imperdiet, neque urna finibus eros, in tristique lacus massa sit amet odio. Vestibulum et laoreet purus, pulvinar vulputate mi. Pellentesque ultrices efficitur mauris nec ultricies. Quisque efficitur magna orci, et maximus justo malesuada at. Nulla hendrerit dui et ligula sagittis efficitur. Ut erat dolor, rutrum ac ex eget, malesuada molestie turpis.</p>
+<p>Aenean eget vehicula mi, in rutrum elit. Mauris pulvinar est non sagittis tempor. Sed quis finibus nisi. Pellentesque commodo, nibh at sagittis vulputate, tortor massa iaculis mi, quis sodales risus lorem vel enim. Nunc faucibus ante ut dolor eleifend, tempor efficitur lacus aliquet. Praesent nec sapien et lacus fermentum ultricies. Aenean ut pharetra lectus. Sed et lacus a nisl gravida cursus.</p>
 
 
 </section>
