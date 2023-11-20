@@ -53,7 +53,7 @@
     "href": "articles/article_03.html#how-i-made-the-enhancement",
     "title": "Minor Enhancement",
     "section": "How I made the enhancement",
-    "text": "How I made the enhancement\n\nWhen making my enhancement I reffered back to the Quarto website here. This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page here. In order to do this under my index.qmd I provided the code to get these icons. The image belows is the code I used."
+    "text": "How I made the enhancement\n\nWhen making my enhancement I reffered back to the Quarto website here. This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page here. In order to do this under my index.qmd on VS Code I provided the code to get these icons. The image belows is the code I used.  Since these icons are on my home page I decided to title them “Welcome!”."
   },
   {
     "objectID": "posts/2023-11-17-pink-parabolas/index.html",
