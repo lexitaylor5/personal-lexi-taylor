@@ -290,15 +290,15 @@
     "objectID": "articles/article_02.html#explanation",
     "href": "articles/article_02.html#explanation",
     "title": "Recursion Function",
-    "section": "Explanation:",
-    "text": "Explanation:\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nThis code creates a function that checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one, the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches one."
+    "section": "Explanation",
+    "text": "Explanation\n isEven = function(number) {\n    if (number == 0)\n        return true;\n    else if (number == 1)\n        return false;\n    else if (number &lt; 0)\n        return isEven(-number);\n    else\n        return isEven(number - 2);\n}\nThis code creates a function that checks for evenness. If the number is equal to zero, then the function will immediately return true which indicates that zero is an even number. If the number is equal to one, the function returns false, which indicated one is an odd number. If none of these lines are true, it checks to see if number is less than zero. If the number is negative, it converts it to positive. Lastly, the function subtracts 2 from the number and continues the process until it reaches one."
   },
   {
     "objectID": "articles/article_02.html#test-the-code",
     "href": "articles/article_02.html#test-the-code",
     "title": "Recursion Function",
-    "section": "Test the Code:",
-    "text": "Test the Code:\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));\ntrue\nfalse\nfalse\nThese lines of code are used to test the function that was made.\nSince 50 is an even number, the console should print true.\nSince 75 is an odd number, the console should print out false.\nSince 1 is not an even number, the console should print out false."
+    "section": "Test the Code",
+    "text": "Test the Code\nconsole.log(isEven(50));\nconsole.log(isEven(75));\nconsole.log(isEven(-1));\ntrue\nfalse\nfalse\nThese lines of code are used to test the function that was made.\nSince 50 is an even number, the console should print true.\nSince 75 is an odd number, the console should print out false.\nSince 1 is not an even number, the console should print out false."
   },
   {
     "objectID": "index.html",

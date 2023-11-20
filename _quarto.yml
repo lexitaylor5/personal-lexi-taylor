@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Lexi Taylor's Website Warmup"
+  title: "Lexi Taylor's Website"
   site-path: "/warmup-lexi-taylor/"
   navbar:
     left:
@@ -12,24 +12,42 @@ website:
       - href: about.qmd
         text: About
       - href: articles/index.qmd
-        text: Articles
+        text: Articles 
       - href: posts/index.qmd
         text: Blog
-  
+
   sidebar:
-    style: "docked"
-    search: true
-    contents:
-      - section: "Articles"
-        contents:
-          - articles/index.qmd
-          - articles/article_01.qmd
-          - articles/article_02.qmd
-          - articles/article_03.qmd
-      - section: "Posts"
+
+    - id: none
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents:
+        - section: "Articles"
+          href: articles/index.qmd
+          contents: 
+            - text: "Minimum Function"
+              href:  articles/article_01.qmd
+            - text: "Recursion"
+              href:  articles/article_02.qmd
+            - text: "Enhancement"
+              href:  articles/article_03.qmd
+        - section: "Posts"
+          href: posts/index.qmd
+          contents: "posts/*/*.qmd"
+          sort:
+            - "date desc"
+
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
+    footnotes-hover: true
+
+execute:
+  freeze: true
+
+
+
