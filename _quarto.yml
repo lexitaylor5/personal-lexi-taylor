@@ -6,6 +6,7 @@ website:
   title: "Lexi Taylor's Website"
   site-path: "/warmup-lexi-taylor/"
   navbar:
+    tools:
     left:
       - href: index.qmd
         text: Home

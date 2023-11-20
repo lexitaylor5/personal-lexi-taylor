@@ -8,7 +8,6 @@ about:
       url: "https://github.com/lexitaylor5"
     - text: LinkedIn
       url: "https://linkedin.com/in/alexis-taylor-b41a90293"
-comments: false
 ---
 
 Welcome to my  Website Warmup! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day. 

@@ -28,6 +28,34 @@
     "text": "The first two articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion. The third article explains the minor enhancement I made to my website and how I was able to get it to work effectively."
   },
   {
+    "objectID": "articles/article_03.html",
+    "href": "articles/article_03.html",
+    "title": "Minor Enhancement",
+    "section": "",
+    "text": "The minor enhancement that I made was to the Home page of my website. On the home page I added a two icons that you can click on that take you to my GitHub and LinkedIn pages."
+  },
+  {
+    "objectID": "articles/article_03.html#introduction-to-the-minor-enhancement",
+    "href": "articles/article_03.html#introduction-to-the-minor-enhancement",
+    "title": "Minor Enhancement",
+    "section": "",
+    "text": "The minor enhancement that I made was to the Home page of my website. On the home page I added a two icons that you can click on that take you to my GitHub and LinkedIn pages."
+  },
+  {
+    "objectID": "articles/article_03.html#what-the-minor-enhancement-looks-like",
+    "href": "articles/article_03.html#what-the-minor-enhancement-looks-like",
+    "title": "Minor Enhancement",
+    "section": "What the Minor Enhancement looks like",
+    "text": "What the Minor Enhancement looks like\n\nAs you can see in the image below, under the “Welcome!” there are two icons that can be clicked on."
+  },
+  {
+    "objectID": "articles/article_03.html#how-i-made-the-enhancement",
+    "href": "articles/article_03.html#how-i-made-the-enhancement",
+    "title": "Minor Enhancement",
+    "section": "How I made the enhancement",
+    "text": "How I made the enhancement\n\nWhen making my enhancement I reffered back to the Quarto website here. This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page here. In order to do this under my index.qmd I provided the code to get these icons. The image belows is the code I used."
+  },
+  {
     "objectID": "posts/2023-11-17-pink-parabolas/index.html",
     "href": "posts/2023-11-17-pink-parabolas/index.html",
     "title": "Pink Parabolas Make For the Merriest Mathematics",

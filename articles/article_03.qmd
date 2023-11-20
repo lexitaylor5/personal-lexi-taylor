@@ -2,4 +2,23 @@
 title: Minor Enhancement
 ---
 
+## Introduction to the Minor Enhancement
 
+<blockquote>
+The minor enhancement that I made was to the Home page of my website. On the home page I added a two icons that you can click on that take you to my GitHub and LinkedIn pages.
+</blockquote>
+
+## What the Minor Enhancement looks like
+<blockquote>
+As you can see in the image below, under the "Welcome!" there are two icons that can be clicked on. 
+<img src="/images/enhancement.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
+</blockquote>
+
+
+## How I made the enhancement
+<blockquote>
+When making my enhancement I reffered back to the Quarto website [here](https://quarto.org/docs/websites/website-navigation.html). This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr, I decided to add them to my home page [here](http://localhost:7820). In order to do this under my `index.qmd` I provided the code to get these icons. The image belows is the code I used. <img src="/images/code.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
+
+
+
+</blockquote>
