@@ -33,7 +33,7 @@ function min(a,b) {
 console.log(Math.min(0, 10));
 console.log(Math.min(0, -10));
 ```
-## Explanation:
+## Explanation
 
 ```.js
 function min(a,b) {
@@ -43,7 +43,7 @@ function min(a,b) {
 ```
 This function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”. 
 
-## Test the Code:
+## Test the Code
 ```.js
 console.log(Math.min(0, 10));
 console.log(Math.min(0, -10));

@@ -25,7 +25,7 @@
     "href": "articles/index.html",
     "title": "Articles",
     "section": "",
-    "text": "The articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion."
+    "text": "The first two articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion. The third article explains the minor enhancement I made to my website and how I was able to get it to work effectively."
   },
   {
     "objectID": "posts/2023-11-17-pink-parabolas/index.html",
@@ -255,15 +255,15 @@
     "objectID": "articles/article_01.html#explanation",
     "href": "articles/article_01.html#explanation",
     "title": "Minimum Function",
-    "section": "Explanation:",
-    "text": "Explanation:\nfunction min(a,b) {\n    if (a &lt; b) return a;\n    else return b;\n}\nThis function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”."
+    "section": "Explanation",
+    "text": "Explanation\nfunction min(a,b) {\n    if (a &lt; b) return a;\n    else return b;\n}\nThis function takes two parameters “a” and “b”. These two values then get compared. If “a” is less than “b” then “a” will be returned. If “b” is less than “a” the function will return “b”."
   },
   {
     "objectID": "articles/article_01.html#test-the-code",
     "href": "articles/article_01.html#test-the-code",
     "title": "Minimum Function",
-    "section": "Test the Code:",
-    "text": "Test the Code:\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));\n 0\n-10\nThese lines of code are used to test the function that was made.\nThe first console.log line calls Math.min with the arguments 0 and 10. Since 0 is the minimum value, it should be printed out to the console.\nThe next console.log line calls Math.min with arguments 0 and -10. Since -10 is the minimum value, it should be printed out to the console."
+    "section": "Test the Code",
+    "text": "Test the Code\nconsole.log(Math.min(0, 10));\nconsole.log(Math.min(0, -10));\n 0\n-10\nThese lines of code are used to test the function that was made.\nThe first console.log line calls Math.min with the arguments 0 and 10. Since 0 is the minimum value, it should be printed out to the console.\nThe next console.log line calls Math.min with arguments 0 and -10. Since -10 is the minimum value, it should be printed out to the console."
   },
   {
     "objectID": "articles/article_02.html",

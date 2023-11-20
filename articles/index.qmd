@@ -1,6 +1,6 @@
 ---
 title: "Articles"
 ---
-The articles on this site are here to demonstrate how to
+The first two articles on this site are here to demonstrate how to
 properly solve two problems from the Eloquent Javascript book.
-These problems include the `Math.min` Function and Recursion. 
+These problems include the `Math.min` Function and Recursion. The third article explains the minor enhancement I made to my website and how I was able to get it to work effectively. 

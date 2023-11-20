@@ -30,7 +30,7 @@ website:
               href:  articles/article_01.qmd
             - text: "Recursion"
               href:  articles/article_02.qmd
-            - text: "Enhancement"
+            - text: " Minor Enhancement"
               href:  articles/article_03.qmd
         - section: "Posts"
           href: posts/index.qmd
