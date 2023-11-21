@@ -25,7 +25,7 @@
     "href": "articles/index.html",
     "title": "Articles",
     "section": "",
-    "text": "The first two articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion. The third article explains the minor enhancement I made to my website and how I was able to get it to work effectively."
+    "text": "The first two articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion. The third article explains the major enhancement I made to my website and how I was able to get it to work effectively."
   },
   {
     "objectID": "posts/2023-11-17-minor-enhancement/index.html",
@@ -242,6 +242,6 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome to my Website Warmup! This website serves as a personal website for myself that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
+    "text": "Welcome to my Website Warmup! This website serves as a personal website that can be a starting point for a future website that I may design for myself or someone else one day.\nYou can read a bit about me here."
   }
 ]
