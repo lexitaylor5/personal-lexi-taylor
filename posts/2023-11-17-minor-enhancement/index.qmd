@@ -4,7 +4,7 @@ description: "The minor enhancement I added to better my website."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [minor, enhancement]
+categories: [minor, enhancement, substantive]
 image: banner.jpg
 ---
 

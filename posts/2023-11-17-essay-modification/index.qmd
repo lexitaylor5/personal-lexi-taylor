@@ -4,7 +4,7 @@ description: "Modification on an essay previously written."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [essay, writing, modifications]
+categories: [essay, writing, substantive]
 image: banner.jpg
 ---
 
