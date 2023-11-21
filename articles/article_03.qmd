@@ -5,7 +5,7 @@ title: Minor Enhancement
 ## Introduction 
 
 <blockquote>
-The minor enhancement that I made was to the Home page of my website. On the home page I added a two icons that you can click on that take you to my GitHub and LinkedIn pages.
+The minor enhancement that I made was to the Home page of my website. On the home page I added two icons that you can click on that take you to my GitHub and LinkedIn pages.
 </blockquote>
 
 ## What It Looks Like
