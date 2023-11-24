@@ -8,6 +8,15 @@
     background-color: palevioletred;
 }
 
+.navbar-dark .navbar-nav .nav-item > .nav-link.active, .navbar-light .navbar-nav .nav-item > .nav-link.active{
+    background: rgba(220,220,220,0.3);
+}
+
+.navbar-nav .nav-item > .nav-link {
+    border-radius: .5rem;
+    padding: 0.5rem;
+}
+
 .quarto-listing-category {
   font-family: "Consolas";
 }
