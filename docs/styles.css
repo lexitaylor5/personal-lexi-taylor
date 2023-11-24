@@ -1,1 +1,13 @@
 /* css styles */
+
+.navbar-brand{
+  font-family: "Consolas";
+}
+
+.navbar-dark, .navbar-light, .navbar {
+    background-color: palevioletred;
+}
+
+.quarto-listing-category {
+  font-family: "Consolas";
+}
