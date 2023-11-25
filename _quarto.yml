@@ -12,10 +12,30 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: articles/index.qmd
-        text: Articles 
-      - href: posts/index.qmd
-        text: Blog
+      - text: Articles
+        menu:
+          - href: articles/index.qmd
+            text: "Articles" 
+          - href: articles/article_01.qmd
+            text: "Minimum Function"
+          - href: articles/article_02.qmd
+            text: "Recursion" 
+          - href: articles/article_03.qmd
+            text: "Major Enhancement"
+      - text: Blog
+        menu:
+          - href: posts/index.qmd
+            text: "Blog" 
+          - href: posts/2023-11-11-college-work
+            text: "Navigating the Transition from College to Work"
+          - href: posts/2023-11-17-animals-happiness
+            text: "The Benefits of Animals in Your Life" 
+          - href: posts/2023-11-17-essay-modification
+            text: "Essay Modification"
+          - href: posts/2023-11-17-life-work
+            text: "Finding Balance Between Life and Work"
+          - href: posts/2023-11-17-minor-enhancement
+            text: "Minor Enhancement"
 
   sidebar:
 
