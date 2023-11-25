@@ -42,6 +42,9 @@ website:
     - id: none
       style: "docked"
       background: light
+      logo: images/gclogo.jpg
+      pinned: true 
+      align: center
       collapse-level: 2
       contents:
         - section: "Articles"
