@@ -6,7 +6,14 @@ title: "Minimum Function"
 
 Below I have described a solution to the Minimum problem in Chapter 3 of the Eloquent Javascript book.
 
-The problem is described in full [here](https://eloquentjavascript.net/03_functions.html). 
+The problem is described in full if you click "Here" on the button below:
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://eloquentjavascript.net/03_functions.html">
+      Here!
+    </a>
+</button>
+```
 
 <blockquote>
 Minimum
@@ -23,7 +30,14 @@ In the remainder of the article I have provided a detailed explanation of the so
 
 ## Explaining the Solution 
 
-To see the solution to the Minimum function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Minimum).
+To see the solution to the Minimum function problem in the GitHub browser click the button below:
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://github.com/lexitaylor5/csc324/blob/main/Minimum">
+      Click Here!
+    </a>
+</button>
+```
 
 ```.js
 function min(a,b) {

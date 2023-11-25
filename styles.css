@@ -21,3 +21,10 @@
     font-family: "Consolas";
   }
   
+  .btn-primary {
+    background-color: lightpink !important;
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px palevioletred;
+  }
+

@@ -6,7 +6,15 @@ title: "Recursion Function"
 
 Below I have described a solution to the Recursion problem in Chapter 3 of the Eloquent Javascript book.
 
-The problem is described in full [here](https://eloquentjavascript.net/03_functions.html). 
+The problem is described in full when you click on the button below:
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://eloquentjavascript.net/03_functions.html">
+      Click Here!
+    </a>
+</button>
+```
+
 
 <blockquote>
 Recursion
@@ -33,7 +41,14 @@ In the remainder of the article I have provided a detailed explanation of the so
 
 ## Explaining the Solution 
 
-To see the solution to the Recursion Function problem in the GitHub browser click [here](https://github.com/lexitaylor5/csc324/blob/main/Recursion%20).
+To see the solution to the Recursion Function problem in the GitHub browser click the button below:
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://github.com/lexitaylor5/csc324/blob/main/Recursion%20">
+      Click Here!
+    </a>
+</button>
+```
 
 ```.js
  isEven = function(number) {
