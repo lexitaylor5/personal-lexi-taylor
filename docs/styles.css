@@ -7,7 +7,7 @@
   .navbar-dark, .navbar-light, .navbar {
       background-color: palevioletred;
   }
-  
+
   .navbar-dark .navbar-nav .nav-item > .nav-link.active, .navbar-light .navbar-nav .nav-item > .nav-link.active{
       background: rgba(220,220,220,0.3);
   }
