@@ -166,8 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">The Benefits of Animals in Your Life</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../posts/2023-11-17-essay-modification" rel="" target="">
- <span class="dropdown-text">Essay Modification</span></a>
+    <a class="dropdown-item" href="../../posts/2023-11-17-small-task" rel="" target="">
+ <span class="dropdown-text">Small Programming Task</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../posts/2023-11-17-life-work" rel="" target="">
@@ -247,8 +247,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/2023-11-17-essay-modification/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Essay Modification</span></a>
+  <a href="../../posts/2023-11-17-small-task/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Small Programming Task</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -337,33 +337,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <blockquote class="blockquote">
-The minor enhancement that I made was to the Home page of my website. On the home page I added two icons that you can click on that take you to my GitHub and LinkedIn pages.
+The minor enhancement that I made was to the Home page of my website. On the home page I added two clickable icons that take you to my GitHub and LinkedIn pages.
 </blockquote>
 </section>
 <section id="what-it-looks-like" class="level2">
 <h2 class="anchored" data-anchor-id="what-it-looks-like">What It Looks Like</h2>
 <blockquote class="blockquote">
-As you can see in the image below, under the “Welcome!” there are two icons that can be clicked on. <img src="../../images/enhancement.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width="400">
+As you can see in the image below, under the “Welcome!” there are two icons that can be clicked on. <img src="../../images/minor.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width="400">
 </blockquote>
 </section>
 <section id="how-i-did-it" class="level2">
 <h2 class="anchored" data-anchor-id="how-i-did-it">How I Did It</h2>
 <blockquote class="blockquote">
-<p>When making my enhancement I reffered back to the Quarto website <a href="https://quarto.org/docs/websites/website-navigation.html">here</a>. This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr; I decided to add them to my home page. In order to do this in my <code>index.qmd</code> on VS Code I provided the code to get these icons. Below is the code I used.</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>_quarto.yml</strong></pre>
-</div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Welcome!"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> trestles</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://github.com/lexitaylor5"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> LinkedIn</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://linkedin.com/in/alexis-taylor-b41a90293"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>When making my enhancement I reffered back to the Quarto website <a href="https://quarto.org/docs/websites/website-navigation.html">here</a>. This website shows how to get these tools on the navbar. I wanted to take a different approach by adding these tools to my <code>home</code> page instead. I provided the code below that I used to do this.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="op">:</span> <span class="st">"Welcome!"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>format<span class="op">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  html<span class="op">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    page<span class="op">-</span>layout<span class="op">:</span> full</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>about<span class="op">:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  id<span class="op">:</span> about</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  template<span class="op">:</span> jolla</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  links<span class="op">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span> icon<span class="op">:</span> clipboard<span class="op">-</span>data</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      text<span class="op">:</span> LinkedIn</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      href<span class="op">:</span> <span class="st">"https://linkedin.com/in/alexis-taylor-b41a90293"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span> icon<span class="op">:</span> github</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      text<span class="op">:</span> GitHub</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      href<span class="op">:</span> <span class="st">"https://github.com/lexitaylor5"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The code contains two links that both contain an <code>icon</code>, <code>text</code>, and an <code>href</code>. The setup of these links is what makes them two clickable icons on my <code>home</code> page.</p>
 </blockquote>
 
 

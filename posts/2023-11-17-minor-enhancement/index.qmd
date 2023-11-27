@@ -11,31 +11,39 @@ image: banner.jpg
 ## Introduction 
 
 <blockquote>
-The minor enhancement that I made was to the Home page of my website. On the home page I added two icons that you can click on that take you to my GitHub and LinkedIn pages.
+The minor enhancement that I made was to the Home page of my website. On the home page I added two clickable icons that take you to my GitHub and LinkedIn pages.
 </blockquote>
 
 ## What It Looks Like
 <blockquote>
 As you can see in the image below, under the "Welcome!" there are two icons that can be clicked on. 
-<img src="/images/enhancement.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
+<img src="/images/minor.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
 </blockquote>
 
 
 ## How I Did It
 <blockquote>
-When making my enhancement I reffered back to the Quarto website [here](https://quarto.org/docs/websites/website-navigation.html). This website is a great resource when learning how to make a website in VS Code. The website provides an example of how to get the tools on the navbar. Instead of having my clickable icons on the navabr; I decided to add them to my home page. In order to do this in my `index.qmd` on VS Code I provided the code to get these icons. Below is the code I used. 
+When making my enhancement I reffered back to the Quarto website [here](https://quarto.org/docs/websites/website-navigation.html). This website shows how to get these tools on the navbar. I wanted to take a different approach by adding these tools to my `home` page instead. I provided the code below that I used to do this. 
 
-```{.yml filename="_quarto.yml"}
+```.js
+---
 title: "Welcome!"
+format:
+  html:
+    page-layout: full
 about:
-  template: trestles
+  id: about
+  template: jolla
   links:
-    - text: GitHub
-      icon: github
-      url: "https://github.com/lexitaylor5"
-    - text: LinkedIn
-      url: "https://linkedin.com/in/alexis-taylor-b41a90293"
+    - icon: clipboard-data
+      text: LinkedIn
+      href: "https://linkedin.com/in/alexis-taylor-b41a90293"
+    - icon: github
+      text: GitHub
+      href: "https://github.com/lexitaylor5"
+---
 ```
 
+The code contains two links that both contain an `icon`, `text`, and an `href`. The setup of these links is what makes them two clickable icons on my `home` page. 
 
 </blockquote>

@@ -8,7 +8,6 @@ about:
   id: about
   template: jolla
   links:
-      # Variables don't work here.
     - icon: clipboard-data
       text: LinkedIn
       href: "https://linkedin.com/in/alexis-taylor-b41a90293"
@@ -17,7 +16,7 @@ about:
       href: "https://github.com/lexitaylor5"
 back-to-top-navigation: false
 ---
-:::{#about .animate__animated .animate__zoomInDown}
+:::{#about}
 Welcome to my website! This website serves as a personal website that can be a starting point for a future website that I may design for myself or someone else one day. 
 
 Click the button below to read a bit about me!
@@ -29,4 +28,3 @@ Click the button below to read a bit about me!
 </button>
 ```
 :::
-

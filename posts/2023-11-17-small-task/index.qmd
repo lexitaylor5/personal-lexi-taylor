@@ -1,0 +1,42 @@
+---
+title: "Small Programming Task"
+description: "The addition of a logo and buttons."
+author:
+  - name: Lexi Taylor
+date: "2023-11-17"
+categories: [enhancement, logo, button]
+image: banner.jpg
+---
+
+## How to Add a Logo to the Sidebar
+
+<blockquote>
+```.js
+  sidebar:
+
+    - id: none
+      style: "docked"
+      background: light
+      logo: images/gclogo.jpg
+      pinned: true 
+      align: center
+      collapse-level: 2
+      contents:
+        - section: "Articles"
+          href: articles/index.qmd
+          contents: 
+            - text: "Minimum Function"
+              href:  articles/article_01.qmd
+            - text: "Recursion"
+              href:  articles/article_02.qmd
+            - text: "Major Enhancement"
+              href:  articles/article_03.qmd
+        - section: "Posts"
+          href: posts/index.qmd
+          contents: "posts/*/*.qmd"
+          sort:
+            - "date desc"
+```
+</blockquote>
+
+
