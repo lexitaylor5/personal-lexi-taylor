@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -246,7 +280,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#navbar-background-and-font-style" id="toc-navbar-background-and-font-style" class="nav-link active" data-scroll-target="#navbar-background-and-font-style">Navbar Background and Font Style</a></li>
+  <li><a href="#navbar-hover-color" id="toc-navbar-hover-color" class="nav-link" data-scroll-target="#navbar-hover-color">Navbar Hover Color</a></li>
+  <li><a href="#navbar-drop-down" id="toc-navbar-drop-down" class="nav-link" data-scroll-target="#navbar-drop-down">Navbar Drop Down</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -268,8 +310,85 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<blockquote class="blockquote">
+<p>The major enhancement I made was to the navbar on my website. I was able to change the background color, the font style of the text, the color of the font when hovering over <code>home</code>, <code>about</code>, <code>articles</code>, and <code>blog</code> and made a dropdown menu for <code>articles</code> and <code>blog</code>. The image below shows the enhancement to my navbar.</p>
+<p><img src="../images/major.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width="400"></p>
+</blockquote>
+<section id="navbar-background-and-font-style" class="level2">
+<h2 class="anchored" data-anchor-id="navbar-background-and-font-style">Navbar Background and Font Style</h2>
+<blockquote class="blockquote">
+<p>The way I was able to chnage the background color and the font of my navbar will be demonstrated in the code below.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="at">navbar</span><span class="op">-</span>brand{</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    font<span class="op">-</span><span class="dt">family</span><span class="op">:</span> <span class="st">"Consolas"</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="at">quarto</span><span class="op">-</span>listing<span class="op">-</span>category {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    font<span class="op">-</span><span class="dt">family</span><span class="op">:</span> <span class="st">"Consolas"</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="at">navbar</span><span class="op">-</span>dark<span class="op">,</span> <span class="op">.</span><span class="at">navbar</span><span class="op">-</span>light<span class="op">,</span> <span class="op">.</span><span class="at">navbar</span> {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      background<span class="op">-</span><span class="dt">color</span><span class="op">:</span> palevioletred<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In order for this code to work, I had to place it in the <code>style.css</code> folder. There are many different fonts and colors to choose from. To see some of the font styles in Visual Studio Code click the button below.</p>
+<button type="button" class="btn btn-primary">
+    <a href="https://stackoverflow.com/questions/29960057/which-font-is-used-in-visual-studio-code-editor-and-how-to-change-fonts">
+      Click Here!
+    </a>
+</button>
+</blockquote>
+</section>
+<section id="navbar-hover-color" class="level2">
+<h2 class="anchored" data-anchor-id="navbar-hover-color">Navbar Hover Color</h2>
+<blockquote class="blockquote">
+<p>I was able to add the color oranage color when hovering over the words on the navbar by adding the code below in my <code>style.css</code> folder.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="at">navbar</span><span class="op">-</span>dark <span class="op">.</span><span class="at">navbar</span><span class="op">-</span>nav <span class="op">.</span><span class="at">nav</span><span class="op">-</span>link<span class="op">:</span>hover {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> orange<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    font<span class="op">-</span><span class="dt">weight</span><span class="op">:</span> <span class="dv">400</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</blockquote>
+</section>
+<section id="navbar-drop-down" class="level2">
+<h2 class="anchored" data-anchor-id="navbar-drop-down">Navbar Drop Down</h2>
+<blockquote class="blockquote">
+<p>In order to add the drop down to the <code>articles</code> and <code>blog</code> I had to add some things to my <code>_quarto.yml</code> folder. The code is below.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>website<span class="op">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  title<span class="op">:</span> <span class="st">"Lexi Taylor's Website"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  site<span class="op">-</span>path<span class="op">:</span> <span class="st">"/warmup-lexi-taylor/"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  navbar<span class="op">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    tools<span class="op">:</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    left<span class="op">:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href<span class="op">:</span> index<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        text<span class="op">:</span> Home</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href<span class="op">:</span> about<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        text<span class="op">:</span> About</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> text<span class="op">:</span> Articles</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        menu<span class="op">:</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> articles<span class="op">/</span>index<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Articles"</span> </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> articles<span class="op">/</span>article_01<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Minimum Function"</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> articles<span class="op">/</span>article_02<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Recursion"</span> </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> articles<span class="op">/</span>article_03<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Major Enhancement"</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> text<span class="op">:</span> Blog</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        menu<span class="op">:</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span>index<span class="op">.</span><span class="at">qmd</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Blog"</span> </span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span><span class="dv">2023</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span>college<span class="op">-</span>work</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Navigating the Transition from College to Work"</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span><span class="dv">2023</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">17</span><span class="op">-</span>animals<span class="op">-</span>happiness</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"The Benefits of Animals in Your Life"</span> </span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span><span class="dv">2023</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">17</span><span class="op">-</span>essay<span class="op">-</span>modification</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Essay Modification"</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span><span class="dv">2023</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">17</span><span class="op">-</span>life<span class="op">-</span>work</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Finding Balance Between Life and Work"</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>          <span class="op">-</span> href<span class="op">:</span> posts<span class="op">/</span><span class="dv">2023</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">17</span><span class="op">-</span>minor<span class="op">-</span>enhancement</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>            text<span class="op">:</span> <span class="st">"Minor Enhancement"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</blockquote>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

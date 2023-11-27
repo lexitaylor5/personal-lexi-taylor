@@ -28,6 +28,34 @@
     "text": "The first two articles on this site are here to demonstrate how to properly solve two problems from the Eloquent Javascript book. These problems include the Math.min Function and Recursion. The third article explains the major enhancement I made to my website and how I was able to get it to work effectively."
   },
   {
+    "objectID": "articles/article_03.html",
+    "href": "articles/article_03.html",
+    "title": "Major Enhancement",
+    "section": "",
+    "text": "The major enhancement I made was to the navbar on my website. I was able to change the background color, the font style of the text, the color of the font when hovering over home, about, articles, and blog and made a dropdown menu for articles and blog. The image below shows the enhancement to my navbar."
+  },
+  {
+    "objectID": "articles/article_03.html#navbar-background-and-font-style",
+    "href": "articles/article_03.html#navbar-background-and-font-style",
+    "title": "Major Enhancement",
+    "section": "Navbar Background and Font Style",
+    "text": "Navbar Background and Font Style\n\nThe way I was able to chnage the background color and the font of my navbar will be demonstrated in the code below.\n.navbar-brand{\n    font-family: \"Consolas\";\n  }\n\n  .quarto-listing-category {\n    font-family: \"Consolas\";\n  }\n  \n  .navbar-dark, .navbar-light, .navbar {\n      background-color: palevioletred;\n  }\nIn order for this code to work, I had to place it in the style.css folder. There are many different fonts and colors to choose from. To see some of the font styles in Visual Studio Code click the button below.\n\n    \n      Click Here!"
+  },
+  {
+    "objectID": "articles/article_03.html#navbar-hover-color",
+    "href": "articles/article_03.html#navbar-hover-color",
+    "title": "Major Enhancement",
+    "section": "Navbar Hover Color",
+    "text": "Navbar Hover Color\n\nI was able to add the color oranage color when hovering over the words on the navbar by adding the code below in my style.css folder.\n  .navbar-dark .navbar-nav .nav-link:hover {\n    color: orange;\n    font-weight: 400;\n  }"
+  },
+  {
+    "objectID": "articles/article_03.html#navbar-drop-down",
+    "href": "articles/article_03.html#navbar-drop-down",
+    "title": "Major Enhancement",
+    "section": "Navbar Drop Down",
+    "text": "Navbar Drop Down\n\nIn order to add the drop down to the articles and blog I had to add some things to my _quarto.yml folder. The code is below.\nwebsite:\n  title: \"Lexi Taylor's Website\"\n  site-path: \"/warmup-lexi-taylor/\"\n  navbar:\n    tools:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n      - text: Articles\n        menu:\n          - href: articles/index.qmd\n            text: \"Articles\" \n          - href: articles/article_01.qmd\n            text: \"Minimum Function\"\n          - href: articles/article_02.qmd\n            text: \"Recursion\" \n          - href: articles/article_03.qmd\n            text: \"Major Enhancement\"\n      - text: Blog\n        menu:\n          - href: posts/index.qmd\n            text: \"Blog\" \n          - href: posts/2023-11-11-college-work\n            text: \"Navigating the Transition from College to Work\"\n          - href: posts/2023-11-17-animals-happiness\n            text: \"The Benefits of Animals in Your Life\" \n          - href: posts/2023-11-17-essay-modification\n            text: \"Essay Modification\"\n          - href: posts/2023-11-17-life-work\n            text: \"Finding Balance Between Life and Work\"\n          - href: posts/2023-11-17-minor-enhancement\n            text: \"Minor Enhancement\""
+  },
+  {
     "objectID": "posts/2023-11-17-minor-enhancement/index.html",
     "href": "posts/2023-11-17-minor-enhancement/index.html",
     "title": "Minor Enhancement",

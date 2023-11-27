@@ -3,6 +3,10 @@
 .navbar-brand{
     font-family: "Consolas";
   }
+
+  .quarto-listing-category {
+    font-family: "Consolas";
+  }
   
   .navbar-dark, .navbar-light, .navbar {
       background-color: palevioletred;
@@ -20,10 +24,6 @@
   .navbar-nav .nav-item > .nav-link {
       border-radius: .5rem;
       padding: 0.5rem;
-  }
-
-  .quarto-listing-category {
-    font-family: "Consolas";
   }
   
   .btn-primary {

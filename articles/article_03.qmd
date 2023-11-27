@@ -1,3 +1,95 @@
 ---
 title: Major Enhancement
 ---
+
+<blockquote>
+The major enhancement I made was to the navbar on my website. I was able to change the background color, the font style of the text, the color of the font when hovering over  `home `,  `about`, `articles`, and `blog` and made a dropdown menu for `articles` and `blog`. The image below shows the enhancement to my navbar. 
+
+
+<img src="/images/major.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
+
+</blockquote>
+
+
+## Navbar Background and Font Style
+<blockquote>
+The way I was able to chnage the background color and the font of my navbar will be demonstrated in the code below. 
+
+```.js
+.navbar-brand{
+    font-family: "Consolas";
+  }
+
+  .quarto-listing-category {
+    font-family: "Consolas";
+  }
+  
+  .navbar-dark, .navbar-light, .navbar {
+      background-color: palevioletred;
+  }
+```
+In order for this code to work, I had to place it in the `style.css` folder. There are many different fonts and colors to choose from. To see some of the font styles in Visual Studio Code click the button below.
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://stackoverflow.com/questions/29960057/which-font-is-used-in-visual-studio-code-editor-and-how-to-change-fonts">
+      Click Here!
+    </a>
+</button>
+```
+</blockquote>
+
+## Navbar Hover Color
+<blockquote>
+I was able to add the color oranage color when hovering over the words on the navbar by adding the code below in my `style.css` folder.
+
+```.js
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: orange;
+    font-weight: 400;
+  }
+```
+</blockquote>
+
+## Navbar Drop Down
+<blockquote>
+In order to add the drop down to the `articles` and `blog` I had to add some things to my `_quarto.yml` folder. The code is below. 
+
+```.js
+website:
+  title: "Lexi Taylor's Website"
+  site-path: "/warmup-lexi-taylor/"
+  navbar:
+    tools:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Articles
+        menu:
+          - href: articles/index.qmd
+            text: "Articles" 
+          - href: articles/article_01.qmd
+            text: "Minimum Function"
+          - href: articles/article_02.qmd
+            text: "Recursion" 
+          - href: articles/article_03.qmd
+            text: "Major Enhancement"
+      - text: Blog
+        menu:
+          - href: posts/index.qmd
+            text: "Blog" 
+          - href: posts/2023-11-11-college-work
+            text: "Navigating the Transition from College to Work"
+          - href: posts/2023-11-17-animals-happiness
+            text: "The Benefits of Animals in Your Life" 
+          - href: posts/2023-11-17-essay-modification
+            text: "Essay Modification"
+          - href: posts/2023-11-17-life-work
+            text: "Finding Balance Between Life and Work"
+          - href: posts/2023-11-17-minor-enhancement
+            text: "Minor Enhancement"
+```
+</blockquote>
+
+
