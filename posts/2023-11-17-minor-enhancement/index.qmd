@@ -28,6 +28,7 @@ When making my enhancement I reffered back to the Quarto website [here](https://
 ```.js
 ---
 title: "Welcome!"
+comments: False
 format:
   html:
     page-layout: full
@@ -41,6 +42,7 @@ about:
     - icon: github
       text: GitHub
       href: "https://github.com/lexitaylor5"
+back-to-top-navigation: false
 ---
 ```
 
