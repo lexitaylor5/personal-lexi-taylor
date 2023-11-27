@@ -9,8 +9,9 @@ image: banner.jpg
 ---
 
 ## How to Add a Logo to the Sidebar
-
 <blockquote>
+On the sidebar of my website I added a Georgetown logo to the top left of it. I have provided the code below on how I did this. 
+
 ```.js
   sidebar:
 
@@ -37,6 +38,59 @@ image: banner.jpg
           sort:
             - "date desc"
 ```
+In my `_quarto.yml` in the sidebar part of my code I added a section called `logo`. I then inserted the image name into that section which placed the logo on the top left of my website.
 </blockquote>
 
+## Adding Buttons
+<blockquote>
+I decided to add a `button` that is clickable and will take you to different links I have linked on my website. Instead of the clickable link looking like this:
 
+[here]()
+
+I made it look like this:
+
+<button type="button" class="btn btn-primary">
+    <a href="">
+      Click Here!
+    </a>
+</button>
+
+The button helps make my website look more appealing and also stands out more compared to the hyperlink. 
+</blockquote>
+
+## How I Made It
+<blockquote>
+In order to make a button I used the code below. The `href` in the code below is where you provide the link of where you are trying to go to. Underneath the `href` is where you put what you want the button to say. For example, my button says "Click Here!" 
+
+```.js
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="link">
+      Click Here!
+    </a>
+</button>
+```
+</blockquote>
+
+## Button Formatting 
+<blockquote>
+The formatting of the button can be done in the `style.css` folder. I have provided the code from my `style.css` folder below. I made a couple of changes to my button. For example, I changed the color of it to `lightpink` and I made it have a box-shadow stlyle that was `palevioletred`. There are many different colors that you can choose from when making a button. There are also many different ways you can modify it. For example, I used the website below when looking at different ways to style my button.
+
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/">
+      Button Style Website
+    </a>
+</button>
+```
+
+
+```.js
+  .btn-primary {
+    background-color: lightpink !important;
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px palevioletred;
+  }
+```
+</blockquote>

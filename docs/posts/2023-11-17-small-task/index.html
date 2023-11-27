@@ -288,6 +288,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#how-to-add-a-logo-to-the-sidebar" id="toc-how-to-add-a-logo-to-the-sidebar" class="nav-link active" data-scroll-target="#how-to-add-a-logo-to-the-sidebar">How to Add a Logo to the Sidebar</a></li>
+  <li><a href="#adding-buttons" id="toc-adding-buttons" class="nav-link" data-scroll-target="#adding-buttons">Adding Buttons</a></li>
+  <li><a href="#how-i-made-it" id="toc-how-i-made-it" class="nav-link" data-scroll-target="#how-i-made-it">How I Made It</a></li>
+  <li><a href="#button-formatting" id="toc-button-formatting" class="nav-link" data-scroll-target="#button-formatting">Button Formatting</a></li>
   </ul>
 </nav>
     </div>
@@ -336,6 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="how-to-add-a-logo-to-the-sidebar" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-add-a-logo-to-the-sidebar">How to Add a Logo to the Sidebar</h2>
 <blockquote class="blockquote">
+<p>On the sidebar of my website I added a Georgetown logo to the top left of it. I have provided the code below on how I did this.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="op">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span> id<span class="op">:</span> none</span>
@@ -360,6 +364,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>          contents<span class="op">:</span> <span class="st">"posts/*/*.qmd"</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>          sort<span class="op">:</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>            <span class="op">-</span> <span class="st">"date desc"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+In my <code>_quarto.yml</code> in the sidebar part of my code I added a section called <code>logo</code>. I then inserted the image name into that section which placed the logo on the top left of my website.
+</blockquote>
+</section>
+<section id="adding-buttons" class="level2">
+<h2 class="anchored" data-anchor-id="adding-buttons">Adding Buttons</h2>
+<blockquote class="blockquote">
+<p>I decided to add a <code>button</code> that is clickable and will take you to different links I have linked on my website. Instead of the clickable link looking like this:</p>
+<p><a href="">here</a></p>
+<p>I made it look like this:</p>
+<button type="button" class="btn btn-primary">
+<a href=""> Click Here! </a>
+</button>
+The button helps make my website look more appealing and also stands out more compared to the hyperlink.
+</blockquote>
+</section>
+<section id="how-i-made-it" class="level2">
+<h2 class="anchored" data-anchor-id="how-i-made-it">How I Made It</h2>
+<blockquote class="blockquote">
+<p>In order to make a button I used the code below. The <code>href</code> in the code below is where you provide the link of where you are trying to go to. Underneath the <code>href</code> is where you put what you want the button to say. For example, my button says “Click Here!”</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="vs">```{=html}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;button type="button" class="btn btn-primary"&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;a href="link"&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="vs">      Click Here!</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/a&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/button&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</blockquote>
+</section>
+<section id="button-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="button-formatting">Button Formatting</h2>
+<blockquote class="blockquote">
+<p>The formatting of the button can be done in the <code>style.css</code> folder. I have provided the code from my <code>style.css</code> folder below. I made a couple of changes to my button. For example, I changed the color of it to <code>lightpink</code> and I made it have a box-shadow stlyle that was <code>palevioletred</code>. There are many different colors that you can choose from when making a button. There are also many different ways you can modify it. For example, I used the website below when looking at different ways to style my button.</p>
+<button type="button" class="btn btn-primary">
+    <a href="https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/">
+      Button Style Website
+    </a>
+</button>
+<div class="sourceCode" id="cb3"><pre class="sourceCode .js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="at">btn</span><span class="op">-</span>primary {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    background<span class="op">-</span><span class="dt">color</span><span class="op">:</span> lightpink <span class="op">!</span>important<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    outline<span class="op">-</span><span class="dt">color</span><span class="op">:</span> transparent<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    outline<span class="op">-</span><span class="dt">style</span><span class="op">:</span>solid<span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    box<span class="op">-</span><span class="dt">shadow</span><span class="op">:</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">4</span><span class="er">px</span> palevioletred<span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 
 
