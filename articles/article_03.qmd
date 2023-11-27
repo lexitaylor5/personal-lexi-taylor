@@ -3,7 +3,7 @@ title: Major Enhancement
 ---
 
 <blockquote>
-The major enhancement I made was to the navbar on my website. I was able to change the background color, the font style of the text, the color of the font when hovering over  `home `,  `about`, `articles`, and `blog` and made a dropdown menu for `articles` and `blog`. The image below shows the enhancement to my navbar. 
+The major enhancement I made was to the navbar on my website. I was able to change the background color, the style of the text, the color of the font when hovering over the headers on my navbar, and made a dropdown menu for `articles` and `blog`. The image below shows the enhancement to my navbar. 
 
 
 <img src="/images/major.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
@@ -40,7 +40,7 @@ In order for this code to work, I had to place it in the `style.css` folder. The
 
 ## Navbar Hover Color
 <blockquote>
-I was able to add the color oranage color when hovering over the words on the navbar by adding the code below in my `style.css` folder.
+I was able to add the color oranage when hovering over the words on the navbar by adding the code below in my `style.css` folder.
 
 ```.js
   .navbar-dark .navbar-nav .nav-link:hover {
