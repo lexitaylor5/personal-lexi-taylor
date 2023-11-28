@@ -34,7 +34,6 @@ format:
     page-layout: full
 about:
   id: about
-  template: jolla
   links:
     - icon: clipboard-data
       text: LinkedIn
