@@ -43,9 +43,9 @@ In my `_quarto.yml` in the sidebar part of my code I added a section called `log
 
 ## Adding Buttons
 <blockquote>
-I decided to add a `button` that is clickable and will take you to different links I have linked on my website. Instead of the clickable link looking like this: [here]()
+I also decided to add `buttons` that are clickable and will take you to different links I have on my website. Instead of the clickable links looking like this: [here]()
 
-I made it look like this:
+I made them look like this:
 <button type="button" class="btn btn-primary">
     <a href="">
       Click Here!
