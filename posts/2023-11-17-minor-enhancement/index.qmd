@@ -17,6 +17,7 @@ The minor enhancement that I made was to the Home page of my website. On the hom
 ## What It Looks Like
 <blockquote>
 As you can see in the image below, under the "Welcome!" there are two icons that can be clicked on. 
+
 <img src="/images/minor.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
 </blockquote>
 
