@@ -20,10 +20,6 @@ The way I was able to change the background color and the font of my navbar will
     font-family: "Consolas";
   }
 
-  .quarto-listing-category {
-    font-family: "Consolas";
-  }
-  
   .navbar-dark, .navbar-light, .navbar {
       background-color: palevioletred;
   }
@@ -90,6 +86,9 @@ website:
           - href: posts/2023-11-17-minor-enhancement
             text: "Minor Enhancement"
 ```
+
+I added the `text` as Articles and Blog to the `menu` in my code to start the process of the dropdown. I then added the link and text to both the Articles and Blog headers. By doing this, each header has a drop down that has the title of each article and blog that you can click on. 
+
 </blockquote>
 
 

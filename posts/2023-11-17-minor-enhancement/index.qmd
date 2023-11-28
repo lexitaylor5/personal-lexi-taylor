@@ -42,7 +42,6 @@ about:
     - icon: github
       text: GitHub
       href: "https://github.com/lexitaylor5"
-back-to-top-navigation: false
 ---
 ```
 
