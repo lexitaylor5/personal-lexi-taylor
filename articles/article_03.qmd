@@ -36,7 +36,22 @@ In order for this code to work, I had to place it in the `style.css` folder. The
 
 ## Navbar Hover Color
 <blockquote>
-I was able to add the color oranage when hovering over the words on the navbar by adding the code below in my `style.css` folder.
+I was able to add the color oranage when hovering over the words on the navbar by adding the code below in my `style.css` folder. I reffered to the website as well as the Github page from Quarto below when trying to learn how to add a hover color:
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://www.quora.com/How-do-I-change-the-background-color-on-a-hover-in-navbar">
+      Website!
+    </a>
+</button>
+```
+
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://github.com/realworlddatascience/realworlddatascience.github.io">
+      Github!
+    </a>
+</button>
+```
 
 ```.js
   .navbar-dark .navbar-nav .nav-link:hover {
@@ -87,7 +102,14 @@ website:
             text: "Minor Enhancement"
 ```
 
-I added the `text` as Articles and Blog to the `menu` in my code to start the process of the dropdown. I then added the link and text to both the Articles and Blog headers. By doing this, each header has a drop down that has the title of each article and blog that you can click on. 
+I added the `text` as Articles and Blog to the `menu` in my code to start the process of the dropdown. I then added the link and text to both the Articles and Blog headers. By doing this, each header has a drop down that has the title of each article and blog that you can click on. When learning how to add drop downs to the navbar I referred to the Github page below from the Quarto Website.
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://github.com/realworlddatascience/realworlddatascience.github.io">
+      Github!
+    </a>
+</button>
+```
 
 </blockquote>
 

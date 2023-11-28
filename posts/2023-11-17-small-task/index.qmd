@@ -10,7 +10,7 @@ image: banner.jpg
 
 ## How to Add a Logo to the Sidebar
 <blockquote>
-On the sidebar of my website I added a Georgetown logo to the top left of it. I have provided the code below on how I did this. 
+On the sidebar of my website, I added a Georgetown logo to the top of it. I have provided the code below on how I did this. 
 
 ```.js
   sidebar:
@@ -43,17 +43,15 @@ In my `_quarto.yml` in the sidebar part of my code I added a section called `log
 
 ## Adding Buttons
 <blockquote>
-I decided to add a `button` that is clickable and will take you to different links I have linked on my website. Instead of the clickable link looking like this:
-
-[here]()
+I decided to add a `button` that is clickable and will take you to different links I have linked on my website. Instead of the clickable link looking like this: [here]()
 
 I made it look like this:
-
 <button type="button" class="btn btn-primary">
     <a href="">
       Click Here!
     </a>
 </button>
+
 
 The button helps make my website look more appealing and also stands out more compared to the hyperlink. 
 </blockquote>
@@ -70,11 +68,21 @@ In order to make a button I used the code below. The `href` in the code below is
     </a>
 </button>
 ```
+
+By clicking this link below, it will take you to a website that gives different custom button styles.
+```{=html}
+<button type="button" class="btn btn-primary">
+    <a href="https://getbootstrap.com/docs/5.3/components/buttons/#css">
+      Click Here!
+    </a>
+</button>
+```
+
 </blockquote>
 
 ## Button Formatting 
 <blockquote>
-The formatting of the button can be done in the `style.css` folder. I have provided the code from my `style.css` folder below. I made a couple of changes to my button. For example, I changed the color of it to `lightpink` and I made it have a box-shadow stlyle that was `palevioletred`. There are many different colors that you can choose from when making a button. There are also many different ways you can modify it. For example, I used the website below when looking at different ways to style my button.
+The formatting of the button can be done in the `style.css` folder. I have provided the code from my folder below. I made a couple of changes to my button. For example, I changed the color of it to `lightpink` and I made it have a box-shadow stlyle that was `palevioletred`. There are many different colors that you can choose from when making a button. There are also many different ways you can modify it. For example, I used the website below when looking at different ways to style my button.
 
 ```{=html}
 <button type="button" class="btn btn-primary">
