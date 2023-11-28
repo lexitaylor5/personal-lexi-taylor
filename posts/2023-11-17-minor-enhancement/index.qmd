@@ -29,7 +29,6 @@ When making my enhancement I reffered back to the Quarto website [here](https://
 ```.js
 ---
 title: "Welcome!"
-comments: False
 format:
   html:
     page-layout: full

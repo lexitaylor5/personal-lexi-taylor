@@ -1,6 +1,5 @@
 ---
 title: "Welcome!"
-comments: False
 format:
   html:
     page-layout: full
