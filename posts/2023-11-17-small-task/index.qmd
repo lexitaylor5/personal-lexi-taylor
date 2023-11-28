@@ -38,7 +38,7 @@ On the sidebar of my website, I added a Georgetown logo to the top of it. I have
           sort:
             - "date desc"
 ```
-In my `_quarto.yml` in the sidebar part of my code I added a section called `logo`. I then inserted the image name into that section which placed the logo on the top left of my website.
+In my `_quarto.yml` in the sidebar part of my code I added a section called `logo`. I then inserted the image name into that section which placed the logo on the top left of my website. I referenced this link [here](https://quarto.org/docs/websites/website-navigation.html)
 </blockquote>
 
 ## Adding Buttons
