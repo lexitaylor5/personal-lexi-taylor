@@ -32,14 +32,14 @@
     "href": "articles/article_03.html",
     "title": "Major Enhancement",
     "section": "",
-    "text": "The major enhancement I made was to the navbar on my website. I was able to change the background color, the style of the text, the color of the font when hovering over the headers on my navbar, and made a dropdown menu for articles and blog. The image below shows the enhancement to my navbar."
+    "text": "The major enhancement I made was to the navbar on my website. I was able to change the background color, the style of the text, the color of the font when hovering over the headers, and made a dropdown menu for articles and blog. The image below shows the enhancement to my navbar."
   },
   {
     "objectID": "articles/article_03.html#navbar-background-and-font-style",
     "href": "articles/article_03.html#navbar-background-and-font-style",
     "title": "Major Enhancement",
     "section": "Navbar Background and Font Style",
-    "text": "Navbar Background and Font Style\n\nThe way I was able to chnage the background color and the font of my navbar will be demonstrated in the code below.\n.navbar-brand{\n    font-family: \"Consolas\";\n  }\n\n  .quarto-listing-category {\n    font-family: \"Consolas\";\n  }\n  \n  .navbar-dark, .navbar-light, .navbar {\n      background-color: palevioletred;\n  }\nIn order for this code to work, I had to place it in the style.css folder. There are many different fonts and colors to choose from. To see some of the font styles in Visual Studio Code click the button below.\n\n    \n      Click Here!"
+    "text": "Navbar Background and Font Style\n\nThe way I was able to change the background color and the font of my navbar will be demonstrated in the code below.\n.navbar-brand{\n    font-family: \"Consolas\";\n  }\n\n  .quarto-listing-category {\n    font-family: \"Consolas\";\n  }\n  \n  .navbar-dark, .navbar-light, .navbar {\n      background-color: palevioletred;\n  }\nIn order for this code to work, I had to place it in the style.css folder. There are many different fonts and colors to choose from. To see some of the font styles in Visual Studio Code click the button below.\n\n    \n      Click Here!"
   },
   {
     "objectID": "articles/article_03.html#navbar-hover-color",

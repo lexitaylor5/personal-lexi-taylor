@@ -3,7 +3,7 @@ title: Major Enhancement
 ---
 
 <blockquote>
-The major enhancement I made was to the navbar on my website. I was able to change the background color, the style of the text, the color of the font when hovering over the headers on my navbar, and made a dropdown menu for `articles` and `blog`. The image below shows the enhancement to my navbar. 
+The major enhancement I made was to the navbar on my website. I was able to change the background color, the style of the text, the color of the font when hovering over the headers, and made a dropdown menu for `articles` and `blog`. The image below shows the enhancement to my navbar. 
 
 
 <img src="/images/major.jpg" style="float: middle; margin: 5px 20px 5px 10px;" width = 400>
@@ -13,7 +13,7 @@ The major enhancement I made was to the navbar on my website. I was able to chan
 
 ## Navbar Background and Font Style
 <blockquote>
-The way I was able to chnage the background color and the font of my navbar will be demonstrated in the code below. 
+The way I was able to change the background color and the font of my navbar will be demonstrated in the code below. 
 
 ```.js
 .navbar-brand{
