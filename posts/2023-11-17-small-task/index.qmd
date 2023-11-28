@@ -4,7 +4,7 @@ description: "The addition of a logo and buttons."
 author:
   - name: Lexi Taylor
 date: "2023-11-17"
-categories: [enhancement, logo, button]
+categories: [substantive, logo, button]
 image: banner.jpg
 ---
 
