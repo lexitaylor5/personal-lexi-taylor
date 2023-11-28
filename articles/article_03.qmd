@@ -53,7 +53,7 @@ In order to add the drop down to the `articles` and `blog` I had to add some thi
 ```.js
 website:
   title: "Lexi Taylor's Website"
-  site-path: "/warmup-lexi-taylor/"
+  site-path: "/personal-lexi-taylor/"
   navbar:
     tools:
     left:
